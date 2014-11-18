@@ -1,0 +1,26 @@
+body { background: #f9f9f9; -webkit-font-smoothing: antialiased !important}
+
+/** general classes **/
+.francois { font-family: "Francois One", sans-serif !important; }
+.text-uppercase { text-transform: uppercase }
+.button { background: #ffd300; color: black; font-weight: 200; font-size: 1.4em }
+.button:hover { background: #333; color: white;  }
+.darker { background: #333; }
+.darker * { color: white }
+
+section#top { background: rgba(0,0,0,0.7); padding: .6em 0; position: fixed; width: 100%; z-index: 9999 }
+section#top img { height: auto; }
+
+section#top [data-magellan-expedition] { background: none; padding: 0; }
+
+
+section#top nav a { color: white; display: inline-block; margin: 1em .6em; }
+section#top nav a:hover, section#top nav a.active { color: #ffd300; }
+
+section#presentation { background: url('../images/present.jpg') no-repeat top center; background-size: cover; }
+section#presentation header { margin: 20% auto; background: rgba(0,0,0,0.6); padding: 1em;  } 
+section#presentation h1 {font-size: 200%; color: white; } 
+
+section.sections { padding: 1em 0 3.5em 0; }
+section.sections h2 { margin: 1.2em auto .8em auto; border-bottom: 4px solid #ffd300; width: 50%; }
+section.sections p { font-size: 1.5em; font-weight: 200; line-height: 1.4em; }
