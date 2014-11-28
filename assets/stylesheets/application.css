@@ -3,25 +3,33 @@ body { background: #f9f9f9; -webkit-font-smoothing: antialiased !important}
 /** general classes **/
 .francois { font-family: "Francois One", sans-serif !important; }
 .text-uppercase { text-transform: uppercase }
-.button { background: #ffd300; color: black; font-weight: 200; font-size: 1.4em }
+.button { background: #FBCD0A; color: black; font-weight: 200; font-size: 1.4em }
 .button:hover { background: #333; color: white;  }
 .darker { background: #333; }
 .darker * { color: white }
 .whiter { background: white; }
 
 section#top { background: rgba(0,0,0,0.6); position: absolute; padding: .6em 0; width: 100%; z-index: 9999; -webkit-transition: all .4s; transition: all .4s }
-section#top img { height: auto; }
+section#top img { height: auto; width: 90%; position: relative; top: .1em }
 
 section#top [data-magellan-expedition] { background: none; padding: 0; }
 
 
 section#top nav a { color: white; display: inline-block; margin: 1em .6em; transition: all .2s }
-section#top nav a:hover, section#top nav a.active { color: #ffd300; }
+section#top nav a:hover, section#top nav a.active { color: #FBCD0A; }
 
-section#presentation { padding-top: 3em; background: url('../images/present.jpg') no-repeat; background-position: 50% 50%; background-position:50% 50%9 !important; background-attachment:fixed; background-size: cover; }
-section#presentation header { margin: 15% auto; background: rgba(0,0,0,0.6); padding: 1em;  } 
+section#presentation { padding-top: 3em; background: url('../images/header.jpg') no-repeat; background-position: 50% 1px; background-position:50% 50%9 !important; background-attachment:fixed; background-size: 100%; }
+section#presentation header { margin: 12% auto; background: rgba(0,0,0,0.8); padding: 2em 1.5em; visibility: hidden } 
 section#presentation h1 {font-size: 200%; color: white; } 
 
 section.sections { padding: 1em 0 3.5em 0; }
-section.sections h2 { margin: 1.2em auto .8em auto; border-bottom: 4px solid #ffd300; width: 50%; }
+section.sections h2 { margin: 1.2em auto .8em auto; border-bottom: 4px solid #FBCD0A; width: 50%; }
 section.sections p { font-size: 1.5em; font-weight: 200; line-height: 1.4em; }
+
+
+
+section#image1 { background: url('../images/colab.jpg') no-repeat; background-size: 100%; background-position: 50% 10%; height: 300px; }
+
+
+section#projects p { font-size: 100%; }
+section#projects .button { font-size: 90%; }

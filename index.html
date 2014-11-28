@@ -21,9 +21,9 @@
 
       <div class="medium-9 columns text-right">
         <nav class="francois text-uppercase" data-magellan-expedition="">
-          <a href="#about" data-magellan-arrival="about">Sobre o lab</a>
+          <a href="#about" data-magellan-arrival="about">O que fazemos</a>
           <a href="#projects" data-magellan-arrival="projects">Projetos</a>
-          <a href="#" data-magellan-arrival="team">Equipe</a>
+          <a href="#team" data-magellan-arrival="team">Quem somos</a>
           <a href="#">Contato</a>
           <a href="#">Blog</a>
 
@@ -35,12 +35,11 @@
   </section>
 
 
-  <section id="presentation">
+  <section id="presentation" class="parallax">
     <div class="row">
-      <header class="medium-9 medium-centered columns text-center">
-        <h1 class="francois text-uppercase">Nós experimentamos novas formas de participação 
+      <header class="medium-8 medium-centered columns text-center">
+        <h1 class="francois text-uppercase">Experimentamos novas formas de participação 
           cidadã na gestão municipal</h1>
-        <a href="#" class="button">Saiba mais</a>
       </header>
 
 
@@ -49,10 +48,10 @@
  
 
 
-  <section class="whatwedo sections" id="about" data-magellan-destination="about">
+  <section class="whatwedo sections whiter" id="about" data-magellan-destination="about">
     <div class="row">
       <div class="medium-9 medium-centered columns">
-        <h2 class="text-center francois text-uppercase">O que fazemos?</h2>
+        <h2 class="text-center francois text-uppercase">O que fazemos</h2>
         <p class="text-center">
             O LAB.RIO é um laboratório de participação da Prefeitura do Rio, para aproximar 
             os cidadãos e cidadãs do poder público. </br><br/>Entendemos que a cidade pode e deve ser uma
@@ -60,6 +59,15 @@
             de engajamento e participação cidadã na gestão municipal.
         </p>
       </div>
+    </div>
+  </section>
+
+
+  <section class="sections" id="image1">
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+          <p><br/></p> 
+        </div>
     </div>
 
 
@@ -70,20 +78,57 @@
     <div class="row">
       <h2 class="text-center francois text-uppercase">Projetos</h2>
 
-      <div class="medium-4 columns">
-        <img src="http://placehold.it/300x200" alt=""/>
-        <p>Texto</p>
+      <div class="medium-6 columns">
+
+        <div class="row">
+          <div class="medium-5 columns">
+            <img src="./assets/images/agora.png" alt="Desafio Agora"/>
+          </div>
+
+          <div class="medium-7 columns">
+            <br/>
+            <h3 class="francois">Desafio Agora</h3>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <a href="#" class="button">saiba mais</a>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="medium-4 columns">
-        <img src="http://placehold.it/300x200" alt=""/>
-        <p>Texto</p>
-      </div>
+      <div class="medium-6 columns">
+       
+        
+        
+        <div class="row">
+          <div class="medium-5 columns">
+            <img src="./assets/images/imersao.png" alt="Imersao"/>
+          </div>
 
+          <div class="medium-7 columns">
+            <br/>
+            <h3 class="francois">Imersão</h3>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
 
-      <div class="medium-4 columns">
-        <img src="http://placehold.it/300x200" alt=""/>
-        <p>Texto</p>
+            <a href="#" class="button">saiba mais</a>
+          </div>
+
+        </div>     
+        
+        
+        
+        
+        
+        
+        
+        
+        
       </div>
 
 
@@ -96,7 +141,7 @@
 
   <section class="sections team" id="team" data-magellan-destination="team" >
     <div class="row">
-      <h2 class="text-center francois text-uppercase">A Equipe</h2>
+      <h2 class="text-center francois text-uppercase">Quem somos</h2>
 
 
       <div class="medium-3 columns">
@@ -172,7 +217,7 @@
 
   <section class="sections talk" id="talk">
     <div class="row">
-      <h2 class="text-center francois text-uppercase">Fale conosco</h2>
+      <h2 class="text-center francois text-uppercase">Contato</h2>
 
       <p class="text-center">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -213,15 +258,18 @@
   <script type="text/javascript" charset="utf-8">
     $(document).foundation();
 
-    var present = document.getElementById('presentation');
-    var topBar  = document.getElementById('top');
+    var parallaxe  = document.getElementsByClassName('parallax');
+    var present   = document.getElementById('presentation');
+    var topBar    = document.getElementById('top');
 
     function parallax(){
-      var scrollTop = window.pageYOffset;
-      present.style.backgroundPosition = 'center ' + -scrollTop * .3 + 'px';
+      $.each(parallaxe, function(e){  
+        var scrollTop = window.pageYOffset + (window.innerWidth * 0.31);
+        parallaxe[e].style.backgroundPosition = 'center ' + -scrollTop * .2 + 'px';
+      });
 
-      if (scrollTop > 400) {
-        topBar.style.backgroundColor = '#333';
+      if (window.pageYOffset > 100) {
+        topBar.style.backgroundColor = '#000';
         topBar.style.boxShadow = '0 1px 4px #000';
         topBar.style.position = 'fixed';
       } else { 
@@ -230,6 +278,8 @@
         topBar.style.position = 'absolute';
       }
     };
+
+    requestAnimationFrame(parallax);
 
     window.addEventListener('scroll', function(){
       requestAnimationFrame(parallax);
