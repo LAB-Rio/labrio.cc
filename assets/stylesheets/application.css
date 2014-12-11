@@ -17,7 +17,7 @@ section#top [data-magellan-expedition] { background: none; padding: 0; }
 section#top nav a { color: white; display: inline-block; margin: 1em .6em; }
 section#top nav a:hover, section#top nav a.active { color: #ffd300; }
 
-section#presentation { background: url('../images/present.jpg') no-repeat top center; background-size: cover; }
+section#presentation { padding-top: 3em; background: url('../images/present.jpg') no-repeat top center; background-size: cover; }
 section#presentation header { margin: 20% auto; background: rgba(0,0,0,0.6); padding: 1em;  } 
 section#presentation h1 {font-size: 200%; color: white; } 
 
