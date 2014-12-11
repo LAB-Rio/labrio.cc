@@ -10,11 +10,14 @@ a:hover { opacity: .8 }
 .text-uppercase { text-transform: uppercase }
 .button { background: #FBCD0A; color: black; font-weight: 200; font-size: 1.4em }
 .button:hover, .button:active { background: #333; color: white;  }
-.darker { background: #333; }
+.darker { background: #333; color: white }
 .darker * { color: white }
 .whiter { background: white; }
 .show { display: block !important; }
 .orange { color: #FBCD0A; }
+.button-imersao { background: #a2cb45; color: #000; }
+.border-shadow { border: 2px solid yellow; border-bottom: 2px solid #333; border-right: 3px solid #333; color: #333 !important; text-decoration: none !important;  }
+.border-shadow:hover { background: yellow !important; color: black }
 
 
 section#top { background: rgba(0,0,0,0.6); position: absolute; padding: .6em 0; width: 100%; z-index: 9999; -webkit-transition: all .4s; transition: all .4s }
@@ -86,3 +89,14 @@ section#talk p { font-size: 100%; }
 
 
 .scroll-to-top { bottom: 0; }
+
+
+body.project-imersao #programacao strong { color: black }
+body.project-imersao table { background: white; color: white;  }
+body.project-imersao table * { border: 2px solid #9ab31e; text-align: center;   }
+body.project-imersao table td.olive, table td.yard, table td.leaf { padding: 1em .4em; color: white; font-size: 1.1em;}
+
+body.project-imersao table thead { background: white; }
+body.project-imersao td.olive { background: #acc721; }
+body.project-imersao td.leaf { background: #9ab31e }
+body.project-imersao td.yard { background: #879d1a }
