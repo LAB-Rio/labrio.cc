@@ -30,6 +30,9 @@ section#presentation { padding-top: 3em; background: url('../images/header.jpg')
 section#presentation header { margin: 12% auto; background: rgba(0,0,0,0.8); padding: 2em 1.5em; visibility: hidden } 
 section#presentation h1 {font-size: 200%; color: white; } 
 
+section.mobile-present { height: 34%; }
+section.mobile-present img { width: 100%; height: 280px }
+
 section.sections { padding: 1em 0 3.5em 0; }
 section.sections h2 { margin: 1.6em auto 1.6em auto; border-bottom: 4px solid #FBCD0A; width: 35%; }
 section.sections p { font-size: 1.5em; font-weight: 200; line-height: 1.4em; }
@@ -69,8 +72,8 @@ section#team h4 { margin: 0; font-family: 'Francois One', sans-serif; text-align
 section#team h6 { margin: 0; font-size: .9em; text-align: center; font-style: italic }
 section#team .row { margin-bottom: 2em }
 section#team .info { opacity: 0 }
-section#team img { -webkit-filter: grayscale(1); transition: all .4s }
-section#team img:hover { -webkit-filter: grayscale(0); }
+section#team img { -webkit-filter: grayscale(1); filter: grayscale(1); -ms-filter: grayscale(1); -moz-filter: grayscale(1); -ms-transition: all .4s; -moz-transition: all .4s; -webkit-transition: all .4s }
+section#team img:hover { -webkit-filter: grayscale(0); -ms-filter: grayscale(0); -moz-filter: grayscale(0); filter: grayscale(0);}
 section#team .medium-3 .info, section#team .medium-4 .info { transition: all .4s }
 section#team .medium-3:hover .info, section#team .medium-4:hover .info { visibility: visible; opacity: .9 }
 
