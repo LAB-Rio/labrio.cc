@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="./assets/stylesheets/application.css" type="text/css" media="screen" charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
   <title>Lab.Rio</title>
+
+  <meta property="og:title"       content="LAB.Rio"/>
+  <meta property="og:description" content="O LAB.Rio é o laboratório de participação da Prefeitura do Rio, criado para aproximar o poder público dos cidadãos e cidadãs cariocas."/>
+  <meta property="og:image"       content="http://i.imgur.com/nFoq4pD.jpg"/>
+  <meta property="og:site_name"   content="LAB.Rio"/>
+  <meta property="og:url"         content="http://lab.rio.gov.br/"/>
+
+
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,27 +32,42 @@
   <section id="top">
     <header class="row">
       <div class="medium-3 small-6 columns">
-        <img src="./assets/images/logo.png" alt="" />
+        <a href="./index.html"><img src="./assets/images/logo.png" alt="" /></a>
       </div>
 
 
-      <div class="medium-9 columns text-right">
+      <div class="medium-9 small-6 show-for-medium-up columns text-right">
         <nav class="francois text-uppercase" data-magellan-expedition="">
-          <a href="#about" data-magellan-arrival="about">O que fazemos</a>
-          <a href="#projects" data-magellan-arrival="projects">Projetos</a>
-          <a href="#team" data-magellan-arrival="team">Quem somos</a>
-          <a href="#talk" data-magellan-arrival="talk">Contato</a>
+          <a href="./index.html">Voltar à Pagina inicial</a>
+          <a href="./index.html#projects" data-magellan-arrival="projects">Projetos</a>
+          <a href="./index.html#team" data-magellan-arrival="team">Quem somos</a>
+          <a href="./index.html#talk">Contato</a>
           <a href="http://medium.com/@lab.rio" target="_blank">Blog</a>
 
         </nav>
 
       </div>
 
+
+      <div class="small-6 hide-for-medium-up columns text-right">
+        <nav class="francois text-uppercase">
+          <a href="./index.html#projects">Projetos</a>
+          <a href="./index.html#talk">Contato</a>
+          <a href="http://medium.com/@lab.rio" target="_blank">Blog</a>
+        </nav>
+      </div>
+
     </header>
   </section>
 
 
-  <section id="presentation" class="parallax">
+
+  <section class="hide-for-medium-up mobile-present">
+    <img src="./assets/images/header.jpg" alt="presentation"/>
+
+  </section>
+
+  <section id="presentation" class="parallax show-for-medium-up">
     <div class="row">
       <header class="medium-8 medium-centered columns text-center">
         <h1 class="francois text-uppercase">Experimentamos novas formas de participação 
@@ -60,12 +83,11 @@
   <section class="whatwedo sections" id="about" data-magellan-destination="about">
     <div class="row">
       <div class="medium-9 medium-centered columns">
-        <!--<h2 class="text-center francois text-uppercase">O que fazemos</h2>-->
         <p class="text-center">
         <br/><br/>
-            O LAB.Rio é o laboratório de participação da Prefeitura do Rio, para aproximar o poder público dos cidadãos e cidadãs cariocas. 
+            O LAB.Rio é o laboratório de participação da Prefeitura do Rio, criado para aproximar o poder público dos cidadãos e cidadãs cariocas. 
             </br><br/>
-            Entendemos que a cidade pode e deve ser uma construção coletiva e colaborativa. Para isso, criamos experiências digitais e presenciais de engajamento e participação cidadã na gestão municipal.
+            Entendemos que a cidade pode e deve ser uma construção coletiva e colaborativa. Por isso, criamos experiências digitais e presenciais de engajamento e participação cidadã na gestão municipal.
         </p>
       </div>
     </div>
@@ -77,14 +99,14 @@
     <div class="row">
       <h2 class="text-center francois text-uppercase">Projetos</h2>
 
-      <div class="medium-6 columns">
+      <div class="medium-6 small-12 columns">
 
         <div class="row">
-          <div class="medium-5 project-logo columns">
+          <div class="medium-5 small-4 project-logo columns">
             <a href="./agora.html"><img src="./assets/images/agora.png" alt="Desafio Agora"/></a>
           </div>
 
-          <div class="medium-7 columns">
+          <div class="medium-7 small-8 columns">
             <br/>
             <h3 class="francois">Ágora Rio</h3>
             <p>
@@ -99,19 +121,22 @@
 
       </div>
       <!-- end medium-6 -->
-      <div class="medium-6 columns">
+      <div class="medium-6 small-12 columns">
    
         <div class="row">
-          <div class="medium-5 project-logo columns">
+          <div class="medium-5 small-4 project-logo columns">
             <a href="./imersao.html"><img src="./assets/images/imersao.png" alt="Imersao"/></a>
           </div>
 
-          <div class="medium-7 columns">
+          <div class="medium-7 small-8 columns">
             <br/>
             <h3 class="francois">Imersão</h3>
             <p>
-            O <strong>IMERSÃO</strong> é um projeto que convida um grupo de cidadãos e cidadãs a conhecer o funcionamento e os processos decisórios da gestão municipal sob uma nova perspectiva.
-</p>
+              O <strong>IMERSÃO</strong> é um projeto que atende a uma demanda de cidadãos e cidadãs cariocas de conhecer melhor o funcionamento e os processos decisórios da gestão municipal.
+            </p>
+
+
+
 
             <a href="./imersao.html" class="button">saiba mais</a>
           </div>
@@ -126,19 +151,18 @@
 
 
     <div class="row">
-      <div class="medium-6 columns">
+      <div class="medium-6 small-12 columns">
         <div class="row">
-          <div class="medium-5 project-logo columns">
+          <div class="medium-5 small-4 project-logo columns">
             <a href="./chegajunto.html"><img src="./assets/images/chegajunto.png" alt="ChegaJunto!"/></a>
           </div>
 
-          <div class="medium-7 end columns">
+          <div class="medium-7 small-8 end columns">
             <br/>
             <h3 class="francois">ChegaJunto!</h3>
             <p>
 
-              O <strong>ChegaJunto!</strong>  é um projeto criado para contribuir com a formação sobre cidadania e política necessária para que crianças e adolescentes cariocas possam conhecer, demandar e exercer seu direito de participar da gestão municipal do Rio.
-
+              O <strong>ChegaJunto!</strong> contribui para que crianças e adolescentes cariocas possam conhecer, demandar e exercer seu direito de participar da gestão municipal do Rio.
             </p>
 
             <a href="./chegajunto.html" class="button">saiba mais</a>
@@ -155,7 +179,7 @@
 
           <div style="padding: .4em; padding-left: 1.8em; margin-top: 2em; background: #f9f9f9;" class="medium-10 columns">
             </br>
-            <h3 class="francois">Fique por dentro</h4>
+            <h3 class="francois">Novos projetos</h4>
             <p>Cadastre seu email e receba atualizações sobre novos projetos!</p>
             <a href="http://eepurl.com/96KXL" class="button" target="_blank">Cadastrar email</a>
           </div>
@@ -192,7 +216,7 @@
       <h2 class="text-center francois text-uppercase">Quem somos</h2>
 
 
-      <div class="medium-3 text-center columns">
+      <div class="medium-3 small-6 text-center columns">
         <img src="./assets/images/team/bernardo.png" alt=""/>
         <div class="info">
           <h4>Bernardo Ainbinder</h4>
@@ -201,7 +225,7 @@
       </div>
 
 
-      <div class="medium-3 text-center columns">
+      <div class="medium-3 small-6 text-center columns">
 
           <img src="./assets/images/team/marina.png" alt=""/>
 
@@ -212,7 +236,7 @@
 
       </div>
 
-      <div class="medium-3 text-center columns">
+      <div class="medium-3 small-6 text-center columns">
         <img src="./assets/images/team/ila.png" alt=""/>
 
         <div class="info">
@@ -221,7 +245,7 @@
         </div>
       </div>
 
-      <div class="medium-3 text-center columns">
+      <div class="medium-3 small-6 text-center columns">
         <img src="./assets/images/team/joao.png" alt=""/>
 
         <div class="info">
@@ -239,7 +263,7 @@
         <div class="row">
 
 
-          <div class="medium-4 text-center columns">
+          <div class="medium-4 small-6  text-center columns">
             <img src="./assets/images/team/luti.png" alt=""/>
             
             <div class="info">
@@ -249,7 +273,7 @@
 
           </div>
 
-          <div class="medium-4 text-center columns">
+          <div class="medium-4 small-6 text-center columns">
             <img src="./assets/images/team/luiz.png" alt=""/>
 
             <div class="info">
@@ -260,11 +284,11 @@
 
 
 
-          <div class="medium-4 text-center columns end">
+          <div class="medium-4 small-6 small-centered text-center columns end">
 
             <img src="./assets/images/team/fran.png" alt=""/>
 
-            <div class="info">
+            <div class="info show-for-small-only">
               <h4>Francielly Baliana</h4>
               <h6>Comunicação</h6>
             </div>
@@ -279,37 +303,47 @@
 
   <section class="sections partners whiter" id="partners">
     <div class="row">
-      <h2 class="text-center francois text-uppercase">Os Parceiros</h2>
+      <h2 class="text-center francois text-uppercase">Parceiros</h2>
 
 
 
-      <div class="medium-2 columns">
-        <a href="http://www.centrodeoperacoes.rio.gov.br/" target="_blank"><img src="./assets/images/partners/cor.png" alt=""/></a>
+      <div class="medium-3 small-6 text-center columns">
+        <a href="http://www.centrodeoperacoes.rio.gov.br/" target="_blank"><img width="130" src="./assets/images/partners/cor.png" alt=""/></a>
       </div>
 
-      <div class="medium-2 columns">
-        <a href="http://www.rio.rj.gov.br/web/ipp/" target="_blank"><img src="./assets/images/partners/ipp.png" alt=""/></a>
+      <div class="medium-3 small-6 text-center columns">
+        <a href="http://www.rio.rj.gov.br/web/ipp/" target="_blank"><img src="./assets/images/partners/ipp.jpg" alt=""/></a>
       </div>
 
 
-      <div class="medium-2 columns">
+      <div class="medium-3 small-6 text-center columns">
         <a href="http://www.rio.rj.gov.br/web/eixorio" target="_blank"><img src="./assets/images/partners/eixorio.png" alt=""/></a>
 
       </div>
 
-      <div class="medium-2 columns">
-        <a href="http://www.rio450anos.com.br/" target="_blank"><img src="./assets/images/partners/450.png" alt=""/></a>
-      </div>
+      <div class="medium-3 small-6 text-center end columns">
 
-      <div class="medium-2 columns">
+        <a href="http://www.rio.rj.gov.br/web/iplanrio" target="_blank"><img src="./assets/images/partners/iplan.png" alt=""/></a>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 1.5em ">
+      <div class="medium-3 small-6 text-center columns">
         <img src="./assets/images/partners/pensa.png" alt=""/>
       </div>
 
-      <div class="medium-2 columns">
-        <a href="www.armazemdedados.rio.rj.gov.br" target="_blank"><img src="./assets/images/partners/armazem.png" alt=""/></a>
-
+      <div class="medium-3 small-6 text-center columns">
+        <a href="http://www.riomaissocial.org/" target="_blank"><img src="./assets/images/partners/riomais.png" alt=""/></a>
       </div>
 
+
+      <div class="medium-3 small-6 text-center columns">
+        <a href="http://www.rio450anos.com.br/" target="_blank"><img src="./assets/images/partners/450.png" alt=""/></a>
+      </div>      
+      
+      <div class="medium-3 small-6 text-center columns">
+        <a href="http://www.armazemdedados.rio.rj.gov.br" target="_blank"><img src="./assets/images/partners/armazem.png" alt=""/></a>
+      </div>
     </div>
   </section>
 
@@ -321,22 +355,22 @@
 
 
 
-      <div class="medium-4 columns text-center">
+      <div class="medium-4 columns small-6 text-center">
         <img src="./assets/images/icons/address.png" />
         <h3 class="francois">nosso endereço</h3>
           
-        <p>Rua São Clemente 360, </br>Rio de Janeiro - RJ</p>
+        <p>Rua São Clemente 360, Botafogo </br>Rio de Janeiro - RJ</p>
       </div>
 
 
-      <div class="medium-4 columns text-center">
+      <div class="medium-4 columns small-6 text-center">
 
         <img src="./assets/images/icons/email.png" />
         <h3 class="francois">nosso email</h3>
         <p><a href="mailto:contato.labrio@gmail.com">contato.labrio@gmail.com</a></p>
       </div>
 
-      <div class="medium-4 end columns text-center">
+      <div class="medium-4 end small-12 small-centered columns text-center">
 
         <img src="./assets/images/icons/phone.png" />
         <h3 class="francois">nosso telefone</h3>
