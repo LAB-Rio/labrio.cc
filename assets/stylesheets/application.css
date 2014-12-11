@@ -1,8 +1,9 @@
-body { background: #f9f9f9; -webkit-font-smoothing: antialiased !important}
-body.project-agora section.agora .row:first-child, body.project-imersao section.imersao .row:first-child { padding-top: 8em }
-body.project-agora section.agora h4, body.project-imersao section.imersao h4 { padding-top: 1.6em; color: white; font-weight: 500 }
+body { background: #f3f3f3; -webkit-font-smoothing: antialiased !important}
+.project-internal .row:first-child { padding-top: 8em }
+.project-internal h4 { padding-top: 1.6em; color: white; font-weight: 500 }
 
 
+a:hover { opacity: .8 }
 
 /** general classes **/
 .francois { font-family: "Francois One", sans-serif !important; }
@@ -30,30 +31,55 @@ section#presentation header { margin: 12% auto; background: rgba(0,0,0,0.8); pad
 section#presentation h1 {font-size: 200%; color: white; } 
 
 section.sections { padding: 1em 0 3.5em 0; }
-section.sections h2 { margin: 1.2em auto 1.4em auto; border-bottom: 4px solid #FBCD0A; width: 35%; }
+section.sections h2 { margin: 1.6em auto 1.6em auto; border-bottom: 4px solid #FBCD0A; width: 35%; }
 section.sections p { font-size: 1.5em; font-weight: 200; line-height: 1.4em; }
 
 
 
-section#image1 { background: url('../images/colab.jpg') no-repeat; background-attachment: fixed; background-size: cover; background-position: 50% 10%; height: 300px; }
+section#image1 { background: url('../images/colab.jpg') no-repeat; background-size: 100%; background-attachment: fixed; background-position: 50% 50%; height: 300px; }
 
 
 section#projects p { font-size: 100%; }
 section#projects .project-logo img { position: relative; top: 1.5em; } 
-section#projects .button { font-size: 90%; padding: .4em; }
+section#projects .button, section.project .button { font-size: 90%; padding: .4em; }
 
 
-section#agora { background: #19BAED ; color: #0C4A7D }
-section#imersao { background: #82C9A8 ; color: #0C4A7D }
+section#agora { background: #19BAED url('../images/agorabg.png') no-repeat right bottom; background-size: 60% ; color: #0C4A7D }
+section#imersao { background: #a2cb45 url('../images/imersaobg.png') no-repeat right bottom; background-size: 60%  ; color: #0C4A7D }
+section#chegajunto { background: #fdcf09 url('../images/chegajuntobg.png') no-repeat right bottom; background-size: 60%; color: #333; padding-bottom: 6em;  }
+section#chegajunto .main-text { margin-bottom: 6.5em }
+section#chegajunto h4 { color: #333; }
+
+
+.project-internal p.main-text { background: rgba(0,0,0,0.05); padding: 1em;  }
+
+
 section.project { padding-bottom: 2em; display: none; }
-section.project strong { color: white;  }
-section.project a { text-decoration: underline; color: white;  }
+section.project strong { color: white; }
+section.project p a { text-decoration: underline; color: white;  }
 section.project h2 { color: white; margin-top: 1.2em } 
 section.project p { margin: 0; padding: 0; line-height: 1.8em; font-size: 110%; } 
-section.project a.button { background: #333; text-decoration: none }
-section#imersao p { color: #3D5350 }
+section#imersao p { color: #333; }
 section.process h2 { color: #333 }
+section.process a { color: blue !important }
 section.project .photos img { border: 4px solid white }
 
 
+section#team h4 { margin: 0; font-family: 'Francois One', sans-serif; text-align: center; color: #333; }
+section#team h6 { margin: 0; font-size: .9em; text-align: center; font-style: italic }
+section#team .row { margin-bottom: 2em }
+section#team .info { opacity: 0 }
+section#team img { -webkit-filter: grayscale(1); transition: all .4s }
+section#team img:hover { -webkit-filter: grayscale(0); }
+section#team .medium-3 .info, section#team .medium-4 .info { transition: all .4s }
+section#team .medium-3:hover .info, section#team .medium-4:hover .info { visibility: visible; opacity: .9 }
 
+
+section#partners { padding: 1.4em auto; padding-bottom: 5em }
+section#partners img { -webkit-filter: grayscale(.8); }
+section#talk { padding-top: 2em }
+section#talk h2 { margin-bottom: 3em }
+section#talk p { font-size: 100%; }
+
+
+.scroll-to-top { bottom: 0; }
