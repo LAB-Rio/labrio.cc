@@ -66,7 +66,7 @@
   </section>
 
 
-  <section class="sections projects darker" id="projects" data-magellan-destination="projects">
+  <section class="sections projects whiter" id="projects" data-magellan-destination="projects">
     <div class="row">
       <h2 class="text-center francois text-uppercase">Projetos</h2>
 
@@ -212,6 +212,28 @@
   <script type="text/javascript" charset="utf-8" src="./assets/javascripts/foundation/foundation.magellan.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(document).foundation();
+
+    var present = document.getElementById('presentation');
+    var topBar  = document.getElementById('top');
+
+    function parallax(){
+      var scrollTop = window.pageYOffset;
+      present.style.backgroundPosition = 'center ' + -scrollTop * .3 + 'px';
+
+      if (scrollTop > 400) {
+        topBar.style.backgroundColor = '#333';
+        topBar.style.boxShadow = '0 1px 4px #000';
+        topBar.style.position = 'fixed';
+      } else { 
+        topBar.style.backgroundColor = 'rgba(0,0,0,0.6)';
+        topBar.style.boxShadow = 'none';
+        topBar.style.position = 'absolute';
+      }
+    };
+
+    window.addEventListener('scroll', function(){
+      requestAnimationFrame(parallax);
+    }, false);
   </script>
 </body>
 </html>
