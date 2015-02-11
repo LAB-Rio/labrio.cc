@@ -8,7 +8,7 @@ a:hover { opacity: .8 }
 /** general classes **/
 .francois { font-family: "Francois One", sans-serif !important; }
 .text-uppercase { text-transform: uppercase }
-.button { background: #FBCD0A; color: black; font-weight: 200; font-size: 1.4em }
+.button { background: #FBCD0A; color: black; font-weight: 200; font-size: 1.1em }
 .button:hover, .button:active { background: #333; color: white;  }
 .darker { background: #333; color: white }
 .darker * { color: white }
@@ -32,6 +32,7 @@ section#top nav a:hover, section#top nav a.active { color: #FBCD0A; }
 section#presentation { padding-top: 3em; background: url('../images/header.jpg') no-repeat; background-position: 50% 1px; background-position:50% 50%9 !important; background-attachment:fixed; background-size: 100%; }
 section#presentation header { margin: 12% auto; background: rgba(0,0,0,0.8); padding: 2em 1.5em; visibility: hidden } 
 section#presentation h1 {font-size: 200%; color: white; } 
+section#presentation .see-more a { font-size: .9em !important }
 
 section.mobile-present { height: 34%; }
 section.mobile-present img { width: 100%; height: 280px }
