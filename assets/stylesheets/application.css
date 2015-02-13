@@ -112,8 +112,8 @@ body.saiba-mais { background: white }
 .black-bg h2 { color: white; }
 .orange-bg { background-color:#FFD70A; color: #000 }
 .orange-bg h2 { color: #000 }
-.white-pad { background: rgba(80,80,80,0.1); padding: .8em }
-.white-pad2 { background: rgba(255,255,255,0.4); padding: .8em }
+.white-pad { background: rgba(220,220,220,0.1); padding: .8em }
+.white-pad2 { background: rgba(255,255,255,0.3); padding: .8em }
 
 .saiba-mais .internal-menu { display: block; width: 100%; margin-bottom: 1em;  }
 .saiba-mais .internal-menu a { transition: all .2s; display: inline-block; width: 16%; padding: 1em .2em;  vertical-align: middle; background: #333; color: white;   }
@@ -121,7 +121,9 @@ body.saiba-mais { background: white }
 .saiba-mais .internal-menu a:before { position: relative; content: ' '; vertical-align: middle; }
 
 .saiba-mais section { padding: 2.5em 0 5em 0; }
+.what-is-the-lab { padding-top: 0 !important; }
 .saiba-mais .about img { margin-top: 4em }
+
 
 
 .saiba-mais section h2 { margin: 1em auto;  font-size: 3em; }
