@@ -101,3 +101,53 @@ body.project-imersao table thead { background: white; }
 body.project-imersao td.olive { background: #acc721; }
 body.project-imersao td.leaf { background: #9ab31e }
 body.project-imersao td.yard { background: #879d1a }
+
+
+body.saiba-mais { background: white }
+
+
+.grey-bg { background-color: #ECECEC; color: #333 }
+.grey-bg h2 { color: #333 } 
+.black-bg { background-color: black; color: white; }
+.black-bg h2 { color: white; }
+.orange-bg { background-color:#FFD70A; color: #333 }
+.orange-bg h2 { color: #333 }
+
+.saiba-mais .internal-menu { display: block; width: 100%; margin-bottom: 6em;  }
+.saiba-mais .internal-menu a { transition: all .2s; display: inline-block; width: 16%; padding: 1em .2em;  vertical-align: middle; background: #333; color: white;   }
+.saiba-mais .internal-menu a:hover { background: orange; }
+.saiba-mais .internal-menu a:before { position: relative; content: ' '; vertical-align: middle; }
+
+.saiba-mais section { padding: 2.5em 0; }
+
+
+
+.saiba-mais section h2 { margin-bottom: 1em; margin-top: -.6em; font-size: 3em; }
+.saiba-mais section p { text-indent: 10px; }
+
+.what-is-the-lab { background: url('../images/orange-crop.png') no-repeat center bottom; background-size: 100%; }
+.what-is-the-lab .about { padding-bottom: 8em; }
+.why-lab { background: #FFD70A url('../images/black-crop.png') no-repeat center bottom; background-size: 100%; }
+.why-lab p { padding-bottom: 10em; }
+
+
+.what-participation { background: black url('../images/grey-image-crop.png') no-repeat center bottom; background-size: 100%; }
+.what-participation ol { padding-bottom: 25em; list-style-type:none; }
+.what-participation li { display: block; clear: both; padding: 3.5em 0; vertical-align: middle; }
+.what-participation ol img { float: left; margin-top: -1.5em;  }
+
+.empowerment { background: #FFD70A url('../images/black-image-crop.png') no-repeat center bottom; background-size: 100%; }
+.empowerment p { padding-bottom: 15em }
+
+
+
+.lab-projects { background: #ECECEC url('../images/orange-invert-crop.png') no-repeat center bottom; background-size: 100%; }
+.lab-projects .block { padding-bottom: 10em }
+.lab-projects ul { margin-top: 4em;  }
+.lab-projects li { text-align: center; display: inline-block; list-style-type: none; width: 32%; }
+
+
+.lab-values { background: #000 url('../images/white-crop.png') no-repeat center bottom; background-size: 100%; }
+.lab-values p { padding-bottom: 10em }
+
+.saiba-mais .talk h2 { font-size: 2em !important; margin-top: -2em !important}
