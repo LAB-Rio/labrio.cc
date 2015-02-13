@@ -101,3 +101,13 @@ body.project-imersao table thead { background: white; }
 body.project-imersao td.olive { background: #acc721; }
 body.project-imersao td.leaf { background: #9ab31e }
 body.project-imersao td.yard { background: #879d1a }
+
+
+.saiba-mais .internal-menu { display: block; width: 100%; margin-bottom: 1em;  }
+.saiba-mais .internal-menu a { transition: all .2s; display: inline-block; width: 16%; height: 60px; vertical-align: middle; background: #333; color: white; padding: .6em .4em;  }
+.saiba-mais .internal-menu a:hover { background: orange; }
+.saiba-mais .internal-menu a:before { position: relative; content: ' '; vertical-align: middle; }
+
+.saiba-mais section { padding: 1.5em 0; }
+.saiba-mais .why-lab, .saiba-mais .empowerment { background: #FFDB00; }
+.saiba-mais .what-participation, .lab-values { background: black; color: white; }
