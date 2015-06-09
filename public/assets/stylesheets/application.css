@@ -56,7 +56,7 @@ section#imersao { background: #a2cb45 url('../images/imersaobg.png') no-repeat r
 section#chegajunto { background: #fdcf09 url('../images/chegajuntobg.png') no-repeat right bottom; background-size: 60%; color: #333; padding-bottom: 6em;  }
 section#chegajunto .main-text { margin-bottom: 6.5em }
 section#chegajunto h4 { color: #333; }
-
+section#mapeando { background: white url('../images/mapeando_bg.png') no-repeat right 110%; background-size: 60%; padding-bottom: 6em;  }
 
 .project-internal p.main-text { background: rgba(0,0,0,0.05); padding: 1em;  }
 
@@ -101,6 +101,10 @@ body.project-imersao table thead { background: white; }
 body.project-imersao td.olive { background: #acc721; }
 body.project-imersao td.leaf { background: #9ab31e }
 body.project-imersao td.yard { background: #879d1a }
+
+body.project-mapeando { background: white; }
+body.project-mapeando h4, body.project-mapeando strong { color: #333 }
+body.project-mapeando .button { background: #ed2654; color: white }
 
 
 body.saiba-mais { background: white }
