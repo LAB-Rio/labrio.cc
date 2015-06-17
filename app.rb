@@ -1,10 +1,10 @@
 require 'sinatra'
 
+enable :static
 
-
-get '/' do
-  send_file 'public/index.html' 
-end
+#get '/' do
+  #send_file 'public/index.html' 
+#end
 
 
 get '/votacao' do
