@@ -3,7 +3,7 @@ require 'sinatra'
 
 
 get '/' do
-  redirect '/index.html' 
+  send_file 'public/index.html' 
 end
 
 
