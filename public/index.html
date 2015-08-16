@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <title>Lab.Rio - Laboratório de participação da Prefeitura do Rio</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="google-site-verification" content="5u-Symn1bf4tF9JGRrj27VJTx8tEw8DmUcCKdwvB6xg" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -10,7 +11,6 @@
   <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
-  <title>Lab.Rio - Laboratório de participação da Prefeitura do Rio</title>
 
   <meta property="og:title"       content="LAB.Rio - Laboratório de participação da Prefeitura do Rio"/>
   <meta property="og:description" content="O LAB.Rio é o laboratório de participação da Prefeitura do Rio, criado para aproximar o poder público dos cidadãos e cidadãs cariocas."/>
@@ -46,8 +46,8 @@
 
       <div class="medium-10 small-7 show-for-medium-up columns text-right">
         <nav data-magellan-expedition="">
-          <a href="#about" data-magellan-arrival="about">O que fazemos</a>
-          <a href="#projects" data-magellan-arrival="projects">Projetos</a>
+          <a href="#about" data-magellan-arrival="about">Sobre</a>
+          <a href="#projects" data-magellan-arrival="projects">Experimentos</a>
           <a href="#team" data-magellan-arrival="team">Quem somos</a>
           <a href="#talk" data-magellan-arrival="talk">Contato</a>
           <a href="http://medium.com/@lab.rio" target="_blank">Blog</a>
@@ -69,19 +69,15 @@
 
 
 
-  <section class="hide-for-medium-up mobile-present">
-    <img src="./assets/images/header.jpg" alt="presentation"/>
 
-  </section>
-
-  <section id="presentation" class="parallax show-for-medium-up">
-    <div class="row">
-      <header class="medium-8 medium-centered columns text-center">
-        <h1 class="francois text-uppercase">Experimentamos novas formas de participação 
-          cidadã na gestão municipal</h1>
-      </header>
-
-
+  <section id="presentation" class="parallax">
+    <div class="presentation-child">
+      <div class="row">
+        <header class="medium-8 medium-centered columns text-center">
+          <h1 class="francois text-uppercase">Experimentamos novas formas de participação 
+            cidadã na gestão municipal</h1>
+        </header>
+      </div>
     </div>
   </section>
 
@@ -536,17 +532,15 @@
     function parallax(){
       $.each(parallaxe, function(e){  
         var scrollTop = window.pageYOffset + (window.innerWidth * 0.14);
-        parallaxe[e].style.backgroundPosition = 'center ' + -scrollTop * .2 + 'px';
+        //parallaxe[e].style.backgroundPosition = 'center ' + -scrollTop * .2 + 'px';
       });
 
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 400) {
         topBar.style.backgroundColor = '#333';
         topBar.style.boxShadow = '0 1px 4px #000';
-        topBar.style.position = 'fixed';
       } else { 
         topBar.style.backgroundColor = 'transparent';
         topBar.style.boxShadow = 'none';
-        topBar.style.position = 'absolute';
       }
     };
 
@@ -556,6 +550,7 @@
       requestAnimationFrame(parallax);
     }, false);
 
+  
   </script>
 </body>
 </html>
