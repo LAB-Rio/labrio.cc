@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/stylesheets/foundation.min.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="./assets/stylesheets/application.css" type="text/css" media="screen" charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
   <title>Lab.Rio - Laboratório de participação da Prefeitura do Rio</title>
 
@@ -38,13 +39,13 @@
 
   <section id="top">
     <header class="row">
-      <div class="medium-3 small-5 columns">
+      <div class="medium-2 small-5 columns">
         <a href="./index.html"><img src="./assets/images/logo.png" alt="" /></a>
       </div>
 
 
-      <div class="medium-9 small-7 show-for-medium-up columns text-right">
-        <nav class="francois text-uppercase" data-magellan-expedition="">
+      <div class="medium-10 small-7 show-for-medium-up columns text-right">
+        <nav data-magellan-expedition="">
           <a href="#about" data-magellan-arrival="about">O que fazemos</a>
           <a href="#projects" data-magellan-arrival="projects">Projetos</a>
           <a href="#team" data-magellan-arrival="team">Quem somos</a>
@@ -530,11 +531,11 @@
       });
 
       if (window.pageYOffset > 100) {
-        topBar.style.backgroundColor = '#000';
+        topBar.style.backgroundColor = '#333';
         topBar.style.boxShadow = '0 1px 4px #000';
         topBar.style.position = 'fixed';
       } else { 
-        topBar.style.backgroundColor = 'rgba(0,0,0,0.6)';
+        topBar.style.backgroundColor = 'transparent';
         topBar.style.boxShadow = 'none';
         topBar.style.position = 'absolute';
       }

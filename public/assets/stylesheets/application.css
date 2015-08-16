@@ -20,13 +20,13 @@ a:hover { opacity: .8 }
 .border-shadow:hover { background: yellow !important; color: black }
 
 
-section#top { background: rgba(0,0,0,0.6); position: absolute; padding: .6em 0; width: 100%; z-index: 9999; -webkit-transition: all .4s; transition: all .4s }
-section#top img { height: auto; width: 90%; position: relative; top: .1em }
+section#top { position: absolute; padding: .6em 0; width: 100%; z-index: 9999; -webkit-transition: all .4s; transition: all .4s }
+section#top img { height: auto; width: 90%; position: relative; top: .3em }
 
 section#top [data-magellan-expedition] { background: none; padding: 0; }
 
 
-section#top nav a { color: white; display: inline-block; margin: 1em .6em; transition: all .2s }
+section#top nav a { color: #f9f9f9; display: inline-block; text-shadow: 0 1px 1px #333; text-transform: uppercase; font-size: .8em; margin: 1em .6em; transition: all .2s; font-weight: 700 }
 section#top nav a:hover, section#top nav a.active { color: #FBCD0A; }
 
 section#presentation { padding-top: 3em; background: url('../images/header.jpg') no-repeat; background-position: 50% 1px; background-position:50% 50%9 !important; background-attachment:fixed; background-size: 100%; }
