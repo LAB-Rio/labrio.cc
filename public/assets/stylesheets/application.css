@@ -50,6 +50,9 @@ section#projects p { font-size: 100%; }
 section#projects .project-logo img { position: relative; top: 1.5em; } 
 section#projects .button, section.project .button { font-size: 90%; padding: .4em; }
 
+section#livestreaming { padding: 1.8em 0 1.8em 0; background: white }
+section#livestreaming iframe { height: 360px; width: 100%; margin-top: 1.2em }
+
 
 section#agora { background: #19BAED url('../images/agorabg.png') no-repeat right bottom; background-size: 60% ; color: #0C4A7D }
 section#imersao { background: #a2cb45 url('../images/imersaobg.png') no-repeat right bottom; background-size: 60%  ; color: #0C4A7D }
