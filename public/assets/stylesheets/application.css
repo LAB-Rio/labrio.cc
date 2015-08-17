@@ -153,3 +153,26 @@ body.saiba-mais { background: white }
 
 
 .saiba-mais .talk h2 { font-size: 2em !important; }
+
+
+
+/** Animations **/
+.animate { position: relative; }
+.animate-5 { -webkit-animation: fromTop .2s linear; animation: fromTop .2s linear; }
+.animate-10 { -webkit-animation: fromTop .6s linear; animation: fromTop .6s linear; }
+.animate-15 { -webkit-animation: fromTop 1s linear; animation: fromTop 1s linear; }
+
+
+@-webkit-keyframes fromTop { 
+    0% { top: -30px; opacity: 0 }
+    70% { opacity: 0.1 }
+    100% { top: 0px; opacity: 1  }
+}
+
+@keyframes fromTop { 
+    0% { top: -30px; opacity: 0 }
+    70% { opacity: 0.1 }
+    100% { top: 0px; opacity: 1  }
+}
+
+
