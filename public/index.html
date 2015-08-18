@@ -77,7 +77,7 @@
     <div class="presentation-child slider">
       <div>
         <div class="row slide" data-bg="slide01.jpg" data-index="0">
-          <header class="medium-7 columns text-left">
+          <header class="medium-7 medium-push-1 large-push-0 columns text-left">
             <h1 class="francois text-uppercase">
               Conselho da Juventude da Cidade 
             </h1>
@@ -85,7 +85,10 @@
 
   pensamentos e vivências, de construção coletiva e compartilhada, gestão e produção
 
-  horizontal e uma rede de troca de experiências e conhecimentos.</p>
+  horizontal e uma rede de troca de experiências e conhecimentos.
+            
+              <br/> 
+            </p>
             <a href="#" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
             <a href="#" class="button">Inscreva-se</a>
 
@@ -96,14 +99,14 @@
 
       <div>
         <div class="row slide" data-bg="slide02.jpg" data-index="1">
-          <header class="medium-7 columns text-left">
+          <header class="medium-7 medium-push-1 large-push-0 columns text-left">
             <h1 class="francois text-uppercase">
               Qual sua visão para o futuro do Rio?
             </h1>
             <p>
               Lançamento do Planejamento Estratégico Rio 500.<br/>
   Ao vivo do Museu do Amanhã 
-            
+              <br/> 
             </p>
             <a href="http://riovisao500.rio" target="_blank" class="button button-gray">Visite o site</a>&nbsp;&nbsp;
             <a href="https://www.youtube.com/watch?v=st36WWdHmPs" target="_blank" class="button">Assista aqui</a>
@@ -594,7 +597,7 @@
         topBar.style.backgroundColor = '#333';
         topBar.style.boxShadow = '0 1px 4px #000';
       } else { 
-        topBar.style.backgroundColor = 'transparent';
+        topBar.style.backgroundColor = '#333';
         topBar.style.boxShadow = 'none';
       }
     };
@@ -618,10 +621,7 @@
         $('section#presentation').css({ backgroundImage: 'url("/assets/images/'+currentBg+'")'});
       });
 
-      $('.slider').on('init', function(slick){
-        alert();
-        $('section#presentation').css({ backgroundImage: 'url("/assets/images/slide01.jpg")'});
-      });
+
     
     });
 
