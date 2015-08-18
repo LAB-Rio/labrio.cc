@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/stylesheets/foundation.min.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="./assets/stylesheets/application.css" type="text/css" media="screen" charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
 
@@ -41,7 +42,7 @@
 
   <section id="top">
     <header class="row">
-      <div class="medium-2 small-5 columns">
+      <div class="medium-2  medium-push-1 large-push-0  small-5 columns">
         <a href="./index.html"><img src="./assets/images/logo.png" alt="" /></a>
       </div>
 
@@ -77,7 +78,7 @@
     <div class="presentation-child slider">
       <div>
         <div class="row slide" data-bg="slide01.jpg" data-index="0">
-          <header class="medium-7 medium-push-1 large-push-0 columns text-left">
+          <header class="medium-7 medium-centered columns text-center">
             <h1 class="francois text-uppercase">
               Conselho da Juventude da Cidade 
             </h1>
@@ -89,8 +90,8 @@
             
               <br/> 
             </p>
-            <a href="#" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
-            <a href="#" class="button">Inscreva-se</a>
+            <a href="http://www.conselhodajuventude.com/" target="_blank" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
+            <a href="http://www.conselhodajuventude.com/inscricao" target="_blank" class="button">Inscreva-se</a>
 
           </header>
         </div>
@@ -99,7 +100,7 @@
 
       <div>
         <div class="row slide" data-bg="slide02.jpg" data-index="1">
-          <header class="medium-7 medium-push-1 large-push-0 columns text-left">
+          <header class="medium-7 medium-centered columns text-center">
             <h1 class="francois text-uppercase">
               Qual sua visão para o futuro do Rio?
             </h1>
@@ -108,7 +109,7 @@
   Ao vivo do Museu do Amanhã 
               <br/> 
             </p>
-            <a href="http://riovisao500.rio" target="_blank" class="button button-gray">Visite o site</a>&nbsp;&nbsp;
+            <a href="http://visaorio500.rio" target="_blank" class="button button-gray">Visite o site</a>&nbsp;&nbsp;
             <a href="https://www.youtube.com/watch?v=st36WWdHmPs" target="_blank" class="button">Assista aqui</a>
 
           </header>
@@ -581,35 +582,10 @@
   <script type="text/javascript" charset="utf-8" src="./assets/javascripts/foundation.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="./assets/javascripts/foundation/foundation.magellan.js"></script>
   <script type="text/javascript" charset="utf-8">
-    $(document).foundation();
-
-    var parallaxe   = document.getElementsByClassName('parallax');
-    var present     = document.getElementById('presentation');
-    var topBar      = document.getElementById('top');
-
-    function parallax(){
-      $.each(parallaxe, function(e){  
-        var scrollTop = window.pageYOffset + (window.innerWidth * 0.14);
-        //parallaxe[e].style.backgroundPosition = 'center ' + -scrollTop * .2 + 'px';
-      });
-
-      if (window.pageYOffset > 400) {
-        topBar.style.backgroundColor = '#333';
-        topBar.style.boxShadow = '0 1px 4px #000';
-      } else { 
-        topBar.style.backgroundColor = '#333';
-        topBar.style.boxShadow = 'none';
-      }
-    };
-
-    requestAnimationFrame(parallax);
-
-    window.addEventListener('scroll', function(){
-      requestAnimationFrame(parallax);
-    }, false);
 
  
     $(document).ready(function(){
+      $(document).foundation();
       $('.slider').slick({ autoplay: true, infinite: true, dots: true, autoplaySpeed: 4000 });
       $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         console.log(event); 

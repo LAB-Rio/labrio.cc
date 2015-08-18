@@ -1,4 +1,4 @@
-body { background: #f3f3f3; -webkit-font-smoothing: antialiased !important}
+body { background: #f3f3f3; font-family: 'Open Sans'; -webkit-font-smoothing: antialiased !important}
 .project-internal .row:first-child { padding-top: 8em }
 .project-internal h4 { padding-top: 1.6em; color: white; font-weight: 500 }
 
@@ -21,7 +21,7 @@ a:hover { opacity: .8 }
 .border-shadow:hover { background: yellow !important; color: black }
 
 
-section#top { position: fixed; background: #444; padding: .6em 0; width: 100%; z-index: 9999; -webkit-transition: all .4s; transition: all .4s }
+section#top { position: fixed; background: #333; padding: .6em 0; width: 100%; z-index: 9999; -webkit-transition: all .4s; transition: all .4s }
 section#top img { height: auto; opacity: .6; width: 90%; position: relative; top: .1em }
 
 section#top [data-magellan-expedition] { background: none; padding: 0;  }
@@ -32,8 +32,9 @@ section#top nav a:hover, section#top nav a.active { color: #FBCD0A; opacity: 1 }
 
 section#presentation { background: url('../images/slide01.jpg') no-repeat; transition: all .4s ease-out; background-size: cover; height: 100%; overflow: hidden; }
 section#presentation .presentation-child { background: rgba(0,0,0,0.7); height: 100%; width: 100%; }
-section#presentation header { margin: 15% auto; padding: 2em 1.5em; } 
+section#presentation header { margin: 0 auto; margin-top: 15%; padding: 2em 1.5em; } 
 section#presentation h1 { font-size: 330%; color: white; font-weight: 600 } 
+section#presentation p { font-weight: 200; text-shadow: 0 1px 1px #333 }
 section#presentation { color: white }
 section#presentation .see-more a { font-size: .9em !important }
 
@@ -44,7 +45,7 @@ section#presentation .slide { outline: none }
 
 section.sections { padding: 1em 0 3.5em 0; }
 section.sections h2 { margin: 1.6em auto 1.6em auto; border-bottom: 4px solid #FBCD0A; width: 35%; }
-section.sections p { font-size: 1.5em; font-weight: 200; line-height: 1.4em; }
+section.sections p { font-size: 1.3em; font-weight: 200; line-height: 1.4em; }
 
 
 
