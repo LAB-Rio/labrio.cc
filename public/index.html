@@ -5,6 +5,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="google-site-verification" content="5u-Symn1bf4tF9JGRrj27VJTx8tEw8DmUcCKdwvB6xg" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="./assets/stylesheets/slick.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="./assets/stylesheets/slick-theme.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="./assets/stylesheets/normalize.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="./assets/stylesheets/foundation.min.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="./assets/stylesheets/application.css" type="text/css" media="screen" charset="utf-8">
@@ -71,22 +73,43 @@
 
 
   <section id="presentation" class="parallax">
-    <div class="presentation-child">
-      <div class="row">
-        <header class="medium-7 columns text-left">
-          <h1 class="francois text-uppercase animate animate-10">
-            Conselho da Juventude da Cidade 
-          </h1>
-          <p class="animate-15 animate">A proposta tem como objetivo ser um espaço de diversidade, multiplicidade de projetos,
 
-pensamentos e vivências, de construção coletiva e compartilhada, gestão e produção
+    <div class="presentation-child slider">
+      <div>
+        <div class="row slide" data-bg="slide01.jpg" data-index="0">
+          <header class="medium-7 columns text-left">
+            <h1 class="francois text-uppercase">
+              Conselho da Juventude da Cidade 
+            </h1>
+            <p>A proposta tem como objetivo ser um espaço de diversidade, multiplicidade de projetos,
 
-horizontal e uma rede de troca de experiências e conhecimentos.</p>
-          <a href="#" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
-          <a href="#" class="button">Inscreva-se</a>
+  pensamentos e vivências, de construção coletiva e compartilhada, gestão e produção
 
-        </header>
+  horizontal e uma rede de troca de experiências e conhecimentos.</p>
+            <a href="#" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
+            <a href="#" class="button">Inscreva-se</a>
 
+          </header>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="row slide" data-bg="slide02.jpg" data-index="1">
+          <header class="medium-7 columns text-left">
+            <h1 class="francois text-uppercase">
+              Qual sua visão para o futuro do Rio?
+            </h1>
+            <p>
+              Lançamento do Planejamento Estratégico Rio 500.<br/>
+  Ao vivo do Museu do Amanhã 
+            
+            </p>
+            <a href="http://riovisao500.rio" target="_blank" class="button button-gray">Visite o site</a>&nbsp;&nbsp;
+            <a href="https://www.youtube.com/watch?v=st36WWdHmPs" target="_blank" class="button">Assista aqui</a>
+
+          </header>
+        </div>
       </div>
     </div>
   </section>
@@ -120,6 +143,31 @@ horizontal e uma rede de troca de experiências e conhecimentos.</p>
 
 
   <section class="sections projects whiter" id="projects" data-magellan-destination="projects">
+
+<!--      <div class="medium-3 columns xp-image small-6">-->
+        <!--<a href="./imersao.html"><img src="./assets/images/imersao.png" alt="Imersao"/></a>-->
+      <!--</div>-->
+
+      <!--<div class="medium-3 columns xp-image small-6">-->
+        <!--<a href="./imersao.html"><img src="./assets/images/imersao.png" alt="Imersao"/></a>-->
+      <!--</div>-->
+
+      <!--<div class="medium-3 columns xp-image small-6">-->
+        <!--<a href="./imersao.html"><img src="./assets/images/imersao.png" alt="Imersao"/></a>-->
+      <!--</div>-->
+
+      <!--<div class="medium-3 columns xp-image small-6">-->
+        <!--<a href="./imersao.html"><img src="./assets/images/imersao.png" alt="Imersao"/></a>-->
+      <!--</div>-->
+
+
+
+
+
+
+
+
+
     <div class="row">
       <h2 class="text-center francois text-uppercase">Projetos</h2>
 
@@ -169,7 +217,6 @@ horizontal e uma rede de troca de experiências e conhecimentos.</p>
         </div>
 
       </div>
-      <!-- end medium-6 -->
       <div class="medium-6 small-12 columns">
    
         <div class="row">
@@ -194,10 +241,8 @@ horizontal e uma rede de troca de experiências e conhecimentos.</p>
         </div>     
         
       </div>
-      <!-- end medium-6 -->
 
     </div>
-    <!-- end row -->
 
 
     <div class="row">
@@ -246,7 +291,6 @@ horizontal e uma rede de troca de experiências e conhecimentos.</p>
 
       </div>
 
-      <!-- end medium-7 -->
 
 
 
@@ -530,6 +574,7 @@ horizontal e uma rede de troca de experiências e conhecimentos.</p>
 
 
   <script type="text/javascript" charset="utf-8" src="./assets/javascripts/vendor/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="./assets/javascripts/vendor/slick.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="./assets/javascripts/foundation.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="./assets/javascripts/foundation/foundation.magellan.js"></script>
   <script type="text/javascript" charset="utf-8">
@@ -560,7 +605,36 @@ horizontal e uma rede de troca de experiências e conhecimentos.</p>
       requestAnimationFrame(parallax);
     }, false);
 
-  
+ 
+    $(document).ready(function(){
+      $('.slider').slick({ autoplay: true, infinite: true, dots: true, autoplaySpeed: 4000 });
+      $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log(event); 
+        console.log(currentSlide); 
+        console.log(nextSlide); 
+
+        var currentBg = $('.slide[data-index="'+nextSlide+'"]').data('bg');
+
+        $('section#presentation').css({ backgroundImage: 'url("/assets/images/'+currentBg+'")'});
+      });
+
+      $('.slider').on('init', function(slick){
+        alert();
+        $('section#presentation').css({ backgroundImage: 'url("/assets/images/slide01.jpg")'});
+      });
+    
+    });
+
+    
+    
+
+
+
+
+
+
+
+
   </script>
 </body>
 </html>
