@@ -76,8 +76,34 @@
   <section id="presentation" class="parallax">
 
     <div class="presentation-child slider">
+
       <div>
         <div class="row slide" data-bg="slide01.jpg" data-index="0">
+          <header class="medium-7 medium-centered columns text-center">
+            <h1 class="francois text-uppercase">
+              Hangout com Prefeito, Desafio Ágora Rio Desafio Mobilidade 
+            </h1>
+            <p>
+              &nbsp;  
+              Acompanhe o Hangout com o Prefeito no dia 25 de Agosto, terça feira, às 20 horas. O prefeito vai comentar as propostas finalistas do Ágora Rio Desafio Mobilidade e dizer quais serão incorporadas ao planejamento da prefeitura e quais não e o porquê. Dia 25, às 20h aqui.
+              <br/> 
+            </p>
+            <a href="http://desafioagorario.com.br" target="_blank" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
+            <a href="http://bit.ly/RelatorioAgoraMobilidade" target="_blank" class="button">Ver propostas finalistas</a>
+
+          </header>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div>
+        <div class="row slide" data-bg="slide02.jpg" data-index="1">
           <header class="medium-7 medium-centered columns text-center">
             <h1 class="francois text-uppercase">
               Conselho da Juventude da Cidade 
@@ -99,18 +125,17 @@
 
 
       <div>
-        <div class="row slide" data-bg="slide02.jpg" data-index="1">
+        <div class="row slide" data-bg="slide03.jpg" data-index="2">
           <header class="medium-7 medium-centered columns text-center">
             <h1 class="francois text-uppercase">
               Qual sua visão para o futuro do Rio?
             </h1>
             <p>
-              Lançamento do Planejamento Estratégico Rio 500.<br/>
-  Ao vivo do Museu do Amanhã 
+              A Prefeitura está construindo seu próximo Planejamento Estratégico e precisa da sua colaboração. 
               <br/> 
             </p>
-            <a href="http://visaorio500.rio" target="_blank" class="button button-gray">Visite o site</a>&nbsp;&nbsp;
-            <a href="https://www.youtube.com/watch?v=st36WWdHmPs" target="_blank" class="button">Assista aqui</a>
+            <a href="http://visaorio500.rio/saiba-mais" target="_blank" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
+            <a href="http://visaorio500.rio" target="_blank" class="button">Participe</a>
 
           </header>
         </div>
@@ -449,7 +474,7 @@
 
 
 
-  <section class="sections partners whiter" id="partners">
+  <!--<section class="sections partners whiter" id="partners">
     <div class="row">
       <h2 class="text-center francois text-uppercase">Parceiros</h2>
 
@@ -516,7 +541,7 @@
         <a href="http://www.armazemdedados.rio.rj.gov.br" target="_blank"><img src="./assets/images/partners/armazem.png" alt="Armazem de Dados"/></a>
       </div>
     </div>
-  </section>
+    </section>-->
 
 
 
@@ -588,11 +613,10 @@
       $(document).foundation();
       $('.slider').slick({ autoplay: true, infinite: true, dots: true, autoplaySpeed: 4000 });
       $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        console.log(event); 
-        console.log(currentSlide); 
-        console.log(nextSlide); 
 
         var currentBg = $('.slide[data-index="'+nextSlide+'"]').data('bg');
+        console.log(currentBg);
+        console.log('.slide[data-index="'+nextSlide+'"]');
 
         $('section#presentation').css({ backgroundImage: 'url("/assets/images/'+currentBg+'")'});
       });
