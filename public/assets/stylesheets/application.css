@@ -63,7 +63,8 @@ section#projects .inner-content * { color: white; }
 section#projects .darker-bg { background: rgba(0,0,0,0.9);  }
 
 section#projects .xp-image a { display: block; }
-section#projects .xp-image img { display: block; margin: 20% auto; vertical-align: middle; width: 40%; opacity: .8; }
+section#projects .xp-image img { display: block; margin: 25% auto; vertical-align: middle; width: 40%; opacity: .8; }
+section#projects .xp-image .chegajunto { margin: 10% auto; }
 
 
 
