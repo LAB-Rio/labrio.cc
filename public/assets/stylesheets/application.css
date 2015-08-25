@@ -43,7 +43,6 @@ section#presentation .slide { outline: none }
 
 
 
-section.sections { padding: 1em 0 3.5em 0; }
 section.sections h2 { margin: 1.6em auto 1.6em auto; border-bottom: 4px solid #FBCD0A; width: 35%; }
 section.sections p { font-size: 1.3em; font-weight: 200; line-height: 1.4em; }
 
@@ -59,7 +58,7 @@ section#projects .button, section.project .button { font-size: 90%; padding: .4e
 
 section#projects .xp-image { background-size: 100%; height: 300px;}
 section#projects .inner-content { background: rgba(0,0,0,0.7); width: 100%; height: 100%; position: absolute; left: 0;  }
-section#projects .inner-content h3 { margin-top: 20%;  }
+section#projects .inner-content h3 { margin-top: 20%; border-bottom: 4px solid #FBCD0A; display: inline-block;  }
 section#projects .inner-content * { color: white; }
 section#projects .darker-bg { background: rgba(0,0,0,0.8);  }
 
