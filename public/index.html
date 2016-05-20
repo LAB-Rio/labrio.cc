@@ -76,9 +76,28 @@
   <section id="presentation" class="parallax">
 
     <div class="presentation-child slider">
+      
+      <!-- IMERSÃO -->
+      <div>
+        <div class="row slide" data-bg="slide_imersao.jpg" data-index="2">
+          <header class="medium-7 medium-centered columns text-center">
+            <h1 class="francois text-uppercase">
+              Imersão 2016
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula nulla ac purus ornare luctus id in quam. In nec facilisis purus. Mauris dignissim sit amet urna ut laoreet. Sed scelerisque ipsum est, nec consequat ex auctor eget. Duis a mi vel quam lobortis venenatis vitae sit 
+            </p>
+            <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula nulla ac purus ornare luctus id in quam. In nec facilisis purus. Mauris dignissim sit amet urna ut laoreet. Sed scelerisque ipsum est, nec consequat ex auctor eget. Duis a mi vel quam lobortis venenatis vitae sit 
+            </p>
+            <a href="http://www.labrio.cc/imersao.html" target="_blank" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
+            <a href="https://imersao.typeform.com/to/YKeUUL" target="_blank" class="button">inscreva-se aqui</a>
 
+          </header>
+        </div>
+      </div>
 
-
+      <!-- Conselho -->
       <div>
         <div class="row slide" data-bg="1-11.jpg" data-index="0">
           <header class="medium-7 medium-centered columns text-center">
@@ -102,51 +121,20 @@
 
 
 
-
+      <!-- Agora -->
       <div>
         <div class="row slide" data-bg="slide01.jpg" data-index="1">
           <header class="medium-7 medium-centered columns text-center">
             <h1 class="francois text-uppercase">
               Desafio Ágora Rio
             </h1>
-            <p> 
-              &nbsp;  
-              Com o objetivo de abrir mais uma forma de diálogo e reforçar a participação da população nas tomadas de decisão, a Prefeitura do Rio lançou em 2014 o Desafio Ágora Rio.
-              <br/> 
-            </p>
             <p>
-              O que é isso? Uma plataforma colaborativa onde o cidadão propõe e discute as políticas públicas da cidade com as respectivas secretarias e órgãos municipais.
+              &nbsp;  
+              Com o objetivo de abrir mais uma forma de diálogo e reforçar a participação da população nas tomadas de decisão, a Prefeitura do Rio lançou em 2014 o Desafio Ágora Rio: uma plataforma colaborativa onde o cidadão propõe e discute as políticas públicas da cidade com as respectivas secretarias e órgãos municipais.
+              <br/> 
             </p>
             <a href="http://bit.ly/RelatorioAgoraMobilidade" target="_blank" class="button button-gray">Gráficos de acessos</a>&nbsp;&nbsp;
             <a href="https://www.youtube.com/watch?v=ltwcvgOP5_I" target="_blank" class="button">Clique para assistir</a>
-
-          </header>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-      <div>
-        <div class="row slide" data-bg="slide03.jpg" data-index="2">
-          <header class="medium-7 medium-centered columns text-center">
-            <h1 class="francois text-uppercase">
-              Visão Rio 500
-            </h1>
-            <p>
-              Participar ativamente e em conjunto, do Planejamento Estratégico da Cidade. Sim ou com certeza?
-            </p>
-            <p>
-              O Plano Estratégico 2017-2020 é um documento que reúne as boas práticas de gestão adotadas pela Prefeitura da Cidade que, segundo o acompanhamento da Casa Civil e grande mobilização de diversas secretarias e órgãos públicos, define quais são os principais  projetos que devem ser implantados ao longo dos próximos 4 anos.
-            </p>
-            <a href="http://visaorio500.rio/saiba-mais" target="_blank" class="button button-gray">Saiba mais</a>&nbsp;&nbsp;
-            <a href="http://visaorio500.rio" target="_blank" class="button">Participe</a>
 
           </header>
         </div>
@@ -681,7 +669,7 @@
  
     $(document).ready(function(){
       $(document).foundation();
-      $('.slider').slick({ autoplay: true, infinite: true, dots: false, autoplaySpeed: 5500 });
+      $('.slider').slick({ autoplay: true, infinite: true, dots: false, autoplaySpeed: 4000 });
       $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 
         var currentBg = $('.slide[data-index="'+nextSlide+'"]').data('bg');
