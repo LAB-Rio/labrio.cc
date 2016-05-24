@@ -12,5 +12,5 @@ get '/votacao' do
 end
 
 get '/imersao' do
-  redirect 'https://imersao.typeform.com/to/YKeUUL'
+  redirect 'bit.ly/InscricaoImersao2016'
 end
