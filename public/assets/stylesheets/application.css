@@ -421,3 +421,12 @@ blockquote{
 .quote{
     padding: 5px;
 }
+.status.number{
+    text-align: center;
+    font-weight: 600;
+}
+.up{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
