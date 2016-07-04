@@ -12,5 +12,5 @@ get '/votacao' do
 end
 
 get '/imersao' do
-  redirect 'bit.ly/InscricaoImersao2016'
+ send_file 'public/imersao.html'
 end

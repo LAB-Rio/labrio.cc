@@ -194,3 +194,209 @@ body.saiba-mais { background: white }
 }
 
 
+/**imersão **/
+
+.desc-wrapper p>strong, .desc-wrapper p>em>strong {
+    display: block;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-family: "brandon-grotesque";
+    font-size: 70px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+}
+
+
+.desc-wrapper p {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: "brandon-grotesque";
+    font-size: 20px;
+    line-height: 2em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-style: italic;
+    color: #fff;
+    margin: 20px auto;
+    -webkit-transform: translatez(0);
+}
+
+
+#thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-animation: feature-bg-anim .6s ease-in-out;
+    animation: feature-bg-anim .6s ease-in-out;
+}
+figure {
+    margin: 0;
+}
+
+/**Footer **/
+
+.footer-title {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.3125em;
+    line-height: 1.04762em;
+    color: #000;
+    margin-bottom: 14px;
+    z-index: 1;
+}
+.signature {
+    text-align: right;
+    padding: 20px;
+}
+.signature address {
+    font-style: normal;
+}
+body.imersao {
+    background-color: #fff;
+}
+
+body.imersao #top{
+    background: #000;
+}
+
+body.imersao section#top img {
+    opacity: 1;
+}
+
+.imersao.big-picture{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    background: url('../images/background-imersao-two.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Aligner-item {
+    max-width: 50%;
+}
+.conteudo-box {
+    margin-top: 172px;
+    margin-bottom: 141px;
+}
+
+.conteudo-box__text{
+    font-weight: 600;
+    color: #fff;
+}
+
+body.imersao a, body.imersao a:active, body.imersaso a:focus {
+    color:#fbcd0a;
+}
+
+
+.header-paralax {
+    background-image: url('../images/background-imersao.png');
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 400px;
+}
+.header-paralax h1 {
+    color: #fff;
+}
+main.hero {
+    background: #fff;
+    position: relative;
+    top: 400px;
+}
+
+
+.page-center {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.footer-box {
+    display: inline-block;
+    height: 166px;
+    padding: 27px 50px 27px 0;
+    vertical-align: top;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+
+.site-footer, .page-wrap:after {
+     height: 602px;
+}
+
+.site-footer{
+    background: orange;
+}
+
+section.conteudo-principal {
+    padding: 5.7%;
+    text-align: justify;
+}
+
+.conteudo-principal em{
+    background-color:#99cc00;
+    font-weight: 600;
+    font-style: normal;
+    padding: 3px;
+    color: #fff;
+}
+
+.target{
+    background-color:#99cc00;
+    font-weight: 600;
+    padding: 3px;
+    color: #fff;
+}
+@font-face {
+    font-family: 'din_alternatebold';
+    src: url('din_alternate_bold-webfont.eot');
+    src: url('din_alternate_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('din_alternate_bold-webfont.woff2') format('woff2'),
+         url('din_alternate_bold-webfont.woff') format('woff'),
+         url('din_alternate_bold-webfont.ttf') format('truetype'),
+         url('din_alternate_bold-webfont.svg#din_alternatebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
