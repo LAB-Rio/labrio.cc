@@ -365,12 +365,8 @@ html, body {
      height: 602px;
 }
 
-.site-footer{
-    background: orange;
-}
-
 section.conteudo-principal {
-    padding: 5.7%;
+    padding-top: 5.7%;
     text-align: justify;
 }
 
@@ -387,6 +383,19 @@ section.conteudo-principal {
     font-weight: 600;
     padding: 3px;
     color: #fff;
+    border-radius: 3px;
+    font-style: normal;
+}
+
+.escala-de-participacao{
+    padding: 20px;
+}
+.conteudo,.description-box{
+    font-style: normal;
+    font-weight: 600;
+}
+.imersao-quote{
+   margin: 0 auto;
 }
 @font-face {
     font-family: 'din_alternatebold';
@@ -399,4 +408,16 @@ section.conteudo-principal {
     font-weight: normal;
     font-style: normal;
 
+}
+blockquote{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: aparajita-bold;
+    font-size: 22px;
+    color: #000;
+}
+
+.quote{
+    padding: 5px;
 }
