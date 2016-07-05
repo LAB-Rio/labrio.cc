@@ -383,7 +383,6 @@ section.conteudo-principal {
     font-weight: 600;
     padding: 3px;
     color: #fff;
-    border-radius: 3px;
     font-style: normal;
 }
 
@@ -429,4 +428,40 @@ blockquote{
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
+}
+
+/*** Flirck ***/
+
+
+.flickr-image {
+  width: 24%;
+  margin: 1% 0.5%;
+  height: 200px;
+  display: inline-block;
+  background-position:center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom:-5px;
+  cursor:pointer;
+  position: relative;
+}
+
+}
+
+.flickr-image:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.flickr-image:hover {
+  -webkit-filter: none;
+}
+
+
+
+
+.big {
+  width: 100%;
+  margin: 1% 0;
+  height: 200px;
 }
