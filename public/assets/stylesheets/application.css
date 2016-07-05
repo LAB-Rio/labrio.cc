@@ -300,8 +300,12 @@ body.imersao section#top img {
     max-width: 50%;
 }
 .conteudo-box {
-    margin-top: 172px;
-    margin-bottom: 141px;
+   margin-top: 120px;
+   margin-bottom: 120px;
+}
+
+img.escala-de-participacao {
+    max-width: 74%;
 }
 
 .conteudo-box__text{
@@ -326,6 +330,12 @@ body.imersao h1, body.imersao h2, body.imersao h3,body.imersao h4,body.imersao h
 }
 .header-paralax h1 {
     color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.number.bottom{
+    padding-bottom: 0;
 }
 main.hero {
     background: #fff;
@@ -341,7 +351,7 @@ main.hero {
     padding-left: 20px;
     padding-right: 20px;
     background: #f6f6f6;
-    height: 71%;
+    height: 54%;
 }
 
 .footer-box {
@@ -396,12 +406,19 @@ section.conteudo-principal {
 }
 .conteudo,.description-box{
     font-style: normal;
-    font-weight: 600;
+    padding: 20px;
 }
 .imersao-quote{
-   margin: 0 auto;
-   max-width: 66%;
-   line-height: 1.3;
+       margin: 0 auto;
+    max-width: 76%;
+    line-height: 1.3;
+    font-family: Helvetica Neue sans-serif;
+    font-style: italic;
+    padding: 30px;
+}
+
+section.results {
+    margin-top: 20px;
 }
 /*** Fonts ***/
 @font-face {
@@ -421,17 +438,19 @@ blockquote{
     border: none;
     padding: 0;
     margin: 0;
-    font-family: Aparajita;
     font-size: 22px;
     color: #000;
 }
-
+.autor{
+    font-family:'Helvetica';
+}
 .quote{
     padding: 5px;
 }
 .status.number{
     text-align: center;
     font-weight: 600;
+    padding: 30px;
 }
 .up{
     text-transform: uppercase;
@@ -506,3 +525,28 @@ blockquote{
 .space em {
     font-size: 20px;
 }
+
+body.imersao {
+    font-size: 100%;
+}
+
+/*** Quote ***/
+
+.bqstart {
+     float: left;
+     height: 45px;
+     margin-top: -20px;
+     padding-top: 45px;
+     margin-bottom: -50px;
+     font-size: 700%;
+     color: #99cc00;
+ }
+
+ .bqend {
+     float: right;
+     height: 25px;
+     margin-top: 0px;
+     padding-top: 45px;
+     font-size: 700%;
+     color: #99cc00;
+ }

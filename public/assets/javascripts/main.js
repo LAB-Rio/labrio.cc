@@ -21,7 +21,7 @@ window.addEventListener('scroll', scrollBanner);
          if(i<21){
   			    $("<div>")
             .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
-             .appendTo(".imersao2016").wrap("<a href='" + item.link + "'></a>");
+             .appendTo(".imersao2016").wrap("<a target='"_blank"' href='" + item.link + "'></a>");
   			    }    
   		});
   });
