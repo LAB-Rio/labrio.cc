@@ -310,9 +310,12 @@ body.imersao section#top img {
 }
 
 body.imersao a, body.imersao a:active, body.imersaso a:focus {
-    color:#fbcd0a;
+    color:#000;
 }
 
+body.imersao h1, body.imersao h2, body.imersao h3,body.imersao h4,body.imersao h5,body.imersao h6 {
+    font-family: 'DIN Alternate';
+}
 
 .header-paralax {
     background-image: url('../images/background-imersao.png');
@@ -327,16 +330,18 @@ body.imersao a, body.imersao a:active, body.imersaso a:focus {
 main.hero {
     background: #fff;
     position: relative;
-    top: 400px;
+    top: 530px;
 }
 
 
 .page-center {
     position: relative;
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #f6f6f6;
+    height: 71%;
 }
 
 .footer-box {
@@ -353,7 +358,7 @@ html, body {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px; 
+  margin-bottom: 170px;
 }
 .page-wrap:after {
   content: "";
@@ -362,11 +367,11 @@ html, body {
 
 
 .site-footer, .page-wrap:after {
-     height: 602px;
+    height: 400px;
 }
 
 section.conteudo-principal {
-    padding-top: 5.7%;
+    padding-top: 3.7%;
     text-align: justify;
 }
 
@@ -395,24 +400,28 @@ section.conteudo-principal {
 }
 .imersao-quote{
    margin: 0 auto;
+   max-width: 66%;
+   line-height: 1.3;
+}
+/*** Fonts ***/
+@font-face {
+	font-family:'DIN Alternate';
+	src:url('../fonts/DINAlternateBold.ttf');
+	font-weight:700;
+	font-style:normal;
 }
 @font-face {
-    font-family: 'din_alternatebold';
-    src: url('din_alternate_bold-webfont.eot');
-    src: url('din_alternate_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('din_alternate_bold-webfont.woff2') format('woff2'),
-         url('din_alternate_bold-webfont.woff') format('woff'),
-         url('din_alternate_bold-webfont.ttf') format('truetype'),
-         url('din_alternate_bold-webfont.svg#din_alternatebold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family:'Aparajita';
+	src:url('../fonts/aparajb.ttf');
+	font-weight:600;
+	font-style:normal;
 }
+
 blockquote{
     border: none;
     padding: 0;
     margin: 0;
-    font-family: aparajita-bold;
+    font-family: Aparajita;
     font-size: 22px;
     color: #000;
 }
@@ -464,4 +473,36 @@ blockquote{
   width: 100%;
   margin: 1% 0;
   height: 200px;
+}
+.footer-list{
+    list-style: none;
+    margin-left:0;
+}
+/**Footer Social Icons **/
+.social-media ul.social-list {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    margin: -1em 0 2em -1em;
+}
+.social-media ul.social-list li {
+    display: inline-block;
+    padding: 1em 0 0 1em;
+}
+.social-media ul li a {
+    color: #000;
+}
+.icon {
+    
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.space{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.space em {
+    font-size: 20px;
 }

@@ -13,7 +13,7 @@ function scrollBanner() {
 window.addEventListener('scroll', scrollBanner);
 
 //FlickrAPi
-$(document).ready(function(){
+
   $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=imersao2016&format=json&jsoncallback=?", function(data){
   		$.each(data.items, function(i,item){
   			 var image = (item.media.m).replace("_m.jpg", "_d.jpg");
@@ -38,7 +38,4 @@ $(document).ready(function(){
   			    }    
   		});
   });
-  
-  
-});
-
+ 

@@ -14,3 +14,20 @@ end
 get '/imersao' do
  send_file 'public/imersao.html'
 end
+
+get '/chegajunto' do
+ send_file 'public/chegajunto.html'
+end
+
+get '/desafioagora' do
+ send_file 'public/desafioagora.html'
+end
+
+
+get '/conselhodajuventude' do
+ send_file 'public/conselhodajuventude.html'
+end
+
+get '/mapeando' do
+ send_file 'public/mapeando.html'
+end
