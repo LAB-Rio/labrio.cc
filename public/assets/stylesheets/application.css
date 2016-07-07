@@ -430,7 +430,7 @@ body.mapeando .target { background-color:  #ed2654; }
 }
 
 section.results {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 /*** Fonts ***/
 @font-face {
@@ -486,8 +486,9 @@ blockquote{
   position: relative;
 }
 
+.section-media .row .medium-6.columns{
+    margin-top: 20px;
 }
-
 .flickr-image:hover {
   filter: none;
   -webkit-filter: none;
@@ -591,7 +592,7 @@ body.imersao, body.mapeando {
   text-align: left;
 }
 .testimonials h6{
-  color:#928566; 
+  color:#999; 
   margin:0;
 }
 .testimonials input[type="radio"] {
@@ -756,6 +757,11 @@ section.section-media {
         text-transform: uppercase;
         text-align: center;
         font-size: 26px;
+    }
+    
+    img.escala-de-participacao {
+        max-width: 204%;
+        margin-left: 437px;
     }
     
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
