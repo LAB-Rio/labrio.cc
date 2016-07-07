@@ -571,9 +571,10 @@ body.imersao, body.mapeando {
   color:#ccc;
 }
 .container.testimonials{
-  width:600px;
-  min-height: 280px;
-  height: 342px;
+  max-width: 600px;
+  min-width: 300px;
+  min-height: 303px;
+  max-height: 349px;
   margin:0 auto;
   position:relative;
   padding-bottom:30px;
@@ -624,16 +625,15 @@ body.imersao, body.mapeando {
 
 .testimonials blockquote{
   margin:0;
-  padding:30px;
-  width:600px;
+  padding: 30px;
+  max-width: 600px;
+  min-width: 300px;
   color: #000;
   position:relative;
   font-family: 'Open Sans', sans-serif;
 }
 
-#second:checked ~ .two blockquote {
 
-}
 .two blockquote:after{
   border: solid transparent; 
   border-top-color: purple;
