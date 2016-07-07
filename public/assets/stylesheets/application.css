@@ -332,7 +332,7 @@ body.imersao h1, body.imersao h2, body.imersao h3,body.imersao h4,body.imersao h
     background-size: cover;
     width: 100%;
     position: fixed;
-    height: 400px;
+    height: 436px;
 }
 .header-paralax h1 {
     color: #fff;
@@ -347,6 +347,7 @@ main.hero {
     background: #fff;
     position: relative;
     top: 530px;
+    
 }
 
 
@@ -704,3 +705,79 @@ section.section-media {
     max-width: 280px;
     margin-left: 30px;
 }
+
+/**Responsive **/
+
+
+
+
+
+/* Small screens - MOBILE */
+@media only screen { } /* Define mobile styles - Mobile First */
+ 
+@media only screen and (max-width: 40em) {
+    
+    .container.testimonials, .testimonials blockquote{
+        /*max-width: 600px;*/
+        /*min-width: 300px;*/
+    }
+    a.logo-lab img{
+        width:60%;
+    }
+    .header-paralax h1 { font-size: 1.5em; margin-right: 20px; margin-left: 20px;}
+    .header-paralax  {     justify-content: flex-start; }
+    
+    
+    section#top img {
+        width: 59%;
+    }
+    
+    .flickr-image {
+        width: 104%;
+    }
+    .footer-transparencia.footer-box,.footer-experimentos.footer-box{
+        display: none;
+    }
+    
+    .footer-email.footer-box {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+            align-self: auto;
+            margin: 0 auto;
+            padding: 27px;
+    }
+    .footer-institucional.footer-box{
+       display: none;
+       margin: 0 auto;
+    }
+    
+    .up {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 26px;
+    }
+    
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+ 
+/* Medium screens - TABLET */
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+ 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+ 
+/* Large screens - DESKTOP */
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+ 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+ 
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+ 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+ 
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+ 
+/*------------------------------------------*/
+ 
+    
