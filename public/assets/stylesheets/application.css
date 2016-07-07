@@ -449,8 +449,8 @@ blockquote{
     border: none;
     padding: 0;
     margin: 0;
-    font-size: 22px;
     color: #000;
+    font-style: italic;
 }
 .autor{
     font-family:'Helvetica';
@@ -569,8 +569,9 @@ body.imersao, body.mapeando {
   color:#ccc;
 }
 .container.testimonials{
-  width:500px;
-  min-height:315px;
+  width:600px;
+  min-height: 280px;
+  height: 342px;
   margin:0 auto;
   position:relative;
   padding-bottom:30px;
@@ -585,25 +586,27 @@ body.imersao, body.mapeando {
   color:#736861; 
   margin:15px 0 5px;
   text-shadow:0 1px rgba(255,255,255,0.5);
+  font-size: 14px;
+  text-align: left;
 }
 .testimonials h6{
   color:#928566; 
   margin:0;
 }
 .testimonials input[type="radio"] {
-position: absolute;
-width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
-height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
-padding: 0;
-margin: -1px;
-border: 0;
-clip: rect(0 0 0 0);
-overflow: hidden;
+    position: absolute;
+    width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+    height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .testimonials label{
   display:block;
   width:32%;
-  border: 4px solid white;
+  border: 4px solid #ccc;
   position:absolute;
   bottom:5px;
   cursor: pointer;
@@ -620,28 +623,14 @@ overflow: hidden;
 .testimonials blockquote{
   margin:0;
   padding:30px;
-  width:500px;
-  /*background-color: #DB532B;*/
+  width:600px;
   color: #000;
-  /*box-shadow: 0 5px 2px rgba(0,0,0,0.1);*/
   position:relative;
-  /*transition: background-color 0.6s linear;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
-.testimonials blockquote:after { 
-  content: " "; 
-  height: 0; 
-  width: 0; 
-  position: absolute; 
-  top: 100%; 
-  border: solid transparent; 
-  border-top-color: #DA532B;
-  border-left-color:#DA532B;
-  border-width: 10px; 
-  left: 10%; 
-} 
 #second:checked ~ .two blockquote {
-  background-color:purple;
+
 }
 .two blockquote:after{
   border: solid transparent; 
@@ -650,7 +639,7 @@ overflow: hidden;
   border-width: 10px;
 }
 #third:checked ~ .three blockquote{
-  background-color:#54885F;
+
 }
  .testimonials .three blockquote:after{
   border: solid transparent; 
@@ -684,13 +673,13 @@ overflow: hidden;
 
 #first:checked ~ label.first {
   border-width:6px;
-  border-color:#DB532B;
+  border-color:#99cc00;
 }
 #second:checked ~ label.second {
-  border-width:6px; border-color:purple;
+  border-width:6px; border-color:#99cc00;
 }
 #third:checked ~ label.third {
-  border:6px solid #54885F;
+  border:6px solid #99cc00;
 }
 
 #first:checked ~ div.one {
@@ -704,4 +693,14 @@ overflow: hidden;
 #third:checked ~ div.three {
   left:0;
   opacity:1;
+}
+
+
+section.section-media {
+    margin-top: 40px;
+}
+
+.autor-box {
+    max-width: 280px;
+    margin-left: 30px;
 }
