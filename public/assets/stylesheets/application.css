@@ -268,7 +268,7 @@ figure {
 .signature address {
     font-style: normal;
 }
-body.imersao,body.mapeando {
+body.imersao,body.mapeando, body.conselho {
     background-color: #fff;
 }
 
@@ -404,6 +404,7 @@ section.conteudo-principal {
 }
 
 body.mapeando .target { background-color:  #ed2654; }
+body.conselho .target { background-color:  #c57fc1; }
 
 .target{
     background-color:#99cc00;
@@ -786,4 +787,8 @@ section.section-media {
  
 /*------------------------------------------*/
  
+/** embed chat **/ 
+#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+#mc_embed_signup .button { background: #333333; color: #fff;}
+
     
