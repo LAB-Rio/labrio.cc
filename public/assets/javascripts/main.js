@@ -77,7 +77,7 @@ if ($("body").hasClass("conselho")) {
              if(i<21){
       			    $("<div>")
                 .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
-                 .appendTo(".conselho").wrap("<a target='" +blank+ "'href='" + item.link + "'></a>");
+                 .appendTo(".conselho-pics").wrap("<a target='" +blank+ "'href='" + item.link + "'></a>");
       			    }    
       		});
       });

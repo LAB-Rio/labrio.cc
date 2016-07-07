@@ -272,7 +272,7 @@ body.imersao,body.mapeando, body.conselho {
     background-color: #fff;
 }
 
-body.imersao #top, body.mapeando #top{
+body.imersao #top, body.mapeando #top, body.conselho #top, body.chegajunto #top{
     background: #000;
 }
 
@@ -280,7 +280,19 @@ body.imersao section#top img {
     opacity: 1;
 }
 
+.conselhobg { background: url('../images/conselho/conselho-between-image.jpg') no-repeat center center fixed;}
+.big-picture{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
 .imersao.big-picture{
+    background: url('../images/background-imersao-two.jpg') no-repeat center center fixed;
     max-width: 100%;
     width: auto;
     height: auto;
@@ -325,6 +337,11 @@ body.mapeando a, body.mapeando a:active, body.mapeando a:focus {
 
 body.imersao h1, body.imersao h2, body.imersao h3,body.imersao h4,body.imersao h5,body.imersao h6 {
     font-family: 'DIN Alternate';
+}
+
+.header-paralax.conselho{
+     background-image: url('../images/conselho/conselhodajuventude-background.jpg');
+     height: 600px;
 }
 
 .header-paralax {
@@ -394,7 +411,8 @@ section.conteudo-principal {
     padding-top: 3.7%;
     text-align: justify;
 }
-
+body.mapeando .conteudo-principal em { background-color: red;}
+body.conselho .conteudo-principal em { background-color: #c57fc1; }
 .conteudo-principal em{
     background-color:#99cc00;
     font-weight: 600;
