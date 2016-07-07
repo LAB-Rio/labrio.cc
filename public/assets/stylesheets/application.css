@@ -266,11 +266,11 @@ figure {
 .signature address {
     font-style: normal;
 }
-body.imersao {
+body.imersao,body.mapeando {
     background-color: #fff;
 }
 
-body.imersao #top{
+body.imersao #top, body.mapeando #top{
     background: #000;
 }
 
@@ -317,6 +317,10 @@ body.imersao a, body.imersao a:active, body.imersaso a:focus {
     color:#000;
 }
 
+body.mapeando a, body.mapeando a:active, body.mapeando a:focus {
+    color:#000;
+}
+
 body.imersao h1, body.imersao h2, body.imersao h3,body.imersao h4,body.imersao h5,body.imersao h6 {
     font-family: 'DIN Alternate';
 }
@@ -348,9 +352,7 @@ main.hero {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #f6f6f6;
+    background: #ccc;
     height: 54%;
 }
 
@@ -359,6 +361,11 @@ main.hero {
     height: 166px;
     padding: 27px 50px 27px 0;
     vertical-align: top;
+}
+
+.social-media {
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 html, body {
@@ -392,6 +399,8 @@ section.conteudo-principal {
     padding: 3px;
     color: #fff;
 }
+
+body.mapeando .target { background-color:  #ed2654; }
 
 .target{
     background-color:#99cc00;
@@ -526,8 +535,9 @@ blockquote{
     font-size: 20px;
 }
 
-body.imersao {
+body.imersao, body.mapeando {
     font-size: 100%;
+    font-family: Helvetica Neue sans-serif;
 }
 
 /*** Quote ***/
