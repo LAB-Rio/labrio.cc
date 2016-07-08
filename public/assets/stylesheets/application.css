@@ -317,6 +317,9 @@ body.imersao section#top img {
    margin-top: 120px;
    margin-bottom: 120px;
 }
+body.conselho img.escala-de-participacao {
+    max-width: 94%;
+}
 
 img.escala-de-participacao {
     max-width: 74%;
@@ -691,6 +694,14 @@ body.imersao, body.mapeando {
   opacity:0;
   transition: all 0.6s ease-in;
 }
+a {
+    color: #000;
+}
+body.conselho #emb_uf6s2l card .action { color:#c57fc1 !important ; }
+body.conselho #first:checked ~ label.first{  border-color:#c57fc1;} 
+body.conselho #third:checked ~ label.third { border: 6px solid #c57fc1; }
+body.conselho #second:checked ~ label.second { border: 6px solid #c57fc1; }
+body.conselho .testimonials .quotes {color:#c57fc1;}
 
 #first:checked ~ label.first {
   border-width:6px;
