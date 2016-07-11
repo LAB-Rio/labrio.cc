@@ -16,7 +16,7 @@ get '/imersao' do
 end
 
 get '/chegajunto' do
- send_file 'public/chegajunto.html'
+ send_file 'public/chegajunto-new.html'
 end
 
 get '/desafioagora' do

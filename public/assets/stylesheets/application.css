@@ -319,6 +319,8 @@ body.imersao section#top img {
    margin-top: 120px;
    margin-bottom: 120px;
 }
+body.mapeando img.escala-de-participacao,
+body.chegajunto img.escala-de-participacao,
 body.imersao img.escala-de-participacao,
 body.desafioagora img.escala-de-participacao,
 body.conselho img.escala-de-participacao {
@@ -360,7 +362,11 @@ body.imersao h6 {
      height: 600px;
 }
 .header-paralax.desafioagora{
-    background-image:;
+    background-image:url('../images/desafioagora/agora-first-image.jpg');
+    height: 600px;
+}
+.header-paralax.chegajunto{
+    background-image:url('../images/chegajunto/chegajunto-background.jpg');
     height: 600px;
 }
 
@@ -434,6 +440,7 @@ section.conteudo-principal {
 body.mapeando .conteudo-principal em { background-color: red;}
 body.desafioagora .conteudo-principal em { background-color: #19baed;}
 body.conselho .conteudo-principal em { background-color: #c57fc1; }
+body.chegajunto .conteudo-principal em { background-color: #fdcf09;}
 .conteudo-principal em{
     background-color:#99cc00;
     font-weight: 600;
@@ -445,6 +452,7 @@ body.conselho .conteudo-principal em { background-color: #c57fc1; }
 body.mapeando .target { background-color:  #ed2654; }
 body.conselho .target { background-color:  #c57fc1; }
 body.desafioagora .target { background-color:  #19baed; }
+body.chegajunto .target { background-color:  #fdcf09; }
 
 .target{
     background-color:#99cc00;
@@ -716,6 +724,12 @@ body.imersao, body.mapeando {
 a {
     color: #000;
 }
+
+body.chegajunto #emb_uf6s2l card .action { color:#fdcf09; !important; }
+body.chegajunto #first:checked ~ label.first{  border-color:#fdcf09;} 
+body.chegajunto #third:checked ~ label.third { border: 6px solid #fdcf09; }
+body.chegajunto #second:checked ~ label.second { border: 6px solid #fdcf09; }
+body.chegajunto .testimonials .quotes {color:#fdcf09;}
 
 body.desafioagora #emb_uf6s2l card .action { color:#19baed; !important; }
 body.desafioagora #first:checked ~ label.first{  border-color:#19baed;} 

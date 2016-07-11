@@ -12,12 +12,6 @@ function scrollBanner() {
 
 window.addEventListener('scroll', scrollBanner);
 
-
-  
-  
- 
-
-
 if ($("body").hasClass("mapeando")) {
     // mapeando
       $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=mapeandorio&format=json&jsoncallback=?", function(data){
@@ -29,6 +23,21 @@ if ($("body").hasClass("mapeando")) {
       			    $("<div>")
                 .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
                  .appendTo(".mapeandorio").wrap("<a href='" + item.link + "'></a>");
+      			    }    
+      		});
+    });
+}
+
+if ($("body").hasClass("chegajunto")) {
+      $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=ChegaJuntoRio&format=json&jsoncallback=?", function(data){
+      		$.each(data.items, function(i,item){
+      			 var image = (item.media.m).replace("_m.jpg", "_d.jpg");
+             var title = item.title;
+             var blank = "_blank";
+             if(i<21){
+      			    $("<div>")
+                .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
+                 .appendTo(".chegajunto-pictures").wrap("<a href='" + item.link + "'></a>");
       			    }    
       		});
       });
@@ -90,7 +99,7 @@ if ($("body").hasClass("conselho")) {
 
 if ($("body").hasClass("desafioagora")) {
 
-    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=desafioagora&format=json&jsoncallback=?", function(data){
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=DesafioAgoraRio&format=json&jsoncallback=?", function(data){
       		$.each(data.items, function(i,item){
       			 var image = (item.media.m).replace("_m.jpg", "_d.jpg");
              var title = item.title;
@@ -103,8 +112,5 @@ if ($("body").hasClass("desafioagora")) {
       		});
     });
     
-    $.getJSON("https://sheetsu.com/apis/v1.0/2e05de4e", function(data){
-        console.log(data);
-    });
       
 }
