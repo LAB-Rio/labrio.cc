@@ -268,14 +268,16 @@ figure {
 .signature address {
     font-style: normal;
 }
-body.imersao,body.mapeando, body.conselho {
+body.imersao, body.mapeando, 
+body.conselho, body.desafioagora {
     background-color: #fff;
 }
 
-body.imersao #top, body.mapeando #top, body.conselho #top, body.chegajunto #top{
+body.imersao #top, body.mapeando #top, body.conselho #top, body.chegajunto #top, body.desfioagora #top{
     background: #000;
 }
 
+body.desafioagora section#top img,
 body.imersao section#top img {
     opacity: 1;
 }
@@ -317,9 +319,12 @@ body.imersao section#top img {
    margin-top: 120px;
    margin-bottom: 120px;
 }
+body.imersao img.escala-de-participacao,
+body.desafioagora img.escala-de-participacao,
 body.conselho img.escala-de-participacao {
     max-width: 94%;
 }
+
 
 img.escala-de-participacao {
     max-width: 74%;
@@ -330,21 +335,33 @@ img.escala-de-participacao {
     color: #fff;
 }
 
-body.imersao a, body.imersao a:active, body.imersaso a:focus {
-    color:#000;
-}
-
+body.imersao a, body.imersao a:active, body.imersaso a:focus,
+body.desafioagora a, body.desafioagora a:active, body.desafioagora a:focus,
 body.mapeando a, body.mapeando a:active, body.mapeando a:focus {
     color:#000;
 }
-
-body.imersao h1, body.imersao h2, body.imersao h3,body.imersao h4,body.imersao h5,body.imersao h6 {
+body.desafioagora h1,
+body.desafioagora h2,
+body.desafioagora h3,
+body.desafioagora h4,
+body.desafioagora h5,
+body.desafioagora h6,
+body.imersao h1, 
+body.imersao h2, 
+body.imersao h3,
+body.imersao h4,
+body.imersao h5,
+body.imersao h6 {
     font-family: 'DIN Alternate';
 }
 
 .header-paralax.conselho{
      background-image: url('../images/conselho/conselhodajuventude-background.jpg');
      height: 600px;
+}
+.header-paralax.desafioagora{
+    background-image:;
+    height: 600px;
 }
 
 .header-paralax {
@@ -415,6 +432,7 @@ section.conteudo-principal {
     text-align: justify;
 }
 body.mapeando .conteudo-principal em { background-color: red;}
+body.desafioagora .conteudo-principal em { background-color: #19baed;}
 body.conselho .conteudo-principal em { background-color: #c57fc1; }
 .conteudo-principal em{
     background-color:#99cc00;
@@ -426,6 +444,7 @@ body.conselho .conteudo-principal em { background-color: #c57fc1; }
 
 body.mapeando .target { background-color:  #ed2654; }
 body.conselho .target { background-color:  #c57fc1; }
+body.desafioagora .target { background-color:  #19baed; }
 
 .target{
     background-color:#99cc00;
@@ -697,6 +716,14 @@ body.imersao, body.mapeando {
 a {
     color: #000;
 }
+
+body.desafioagora #emb_uf6s2l card .action { color:#19baed; !important; }
+body.desafioagora #first:checked ~ label.first{  border-color:#19baed;} 
+body.desafioagora #third:checked ~ label.third { border: 6px solid #19baed; }
+body.desafioagora #second:checked ~ label.second { border: 6px solid #19baed; }
+body.desafioagora .testimonials .quotes {color:#19baed;}
+
+
 body.conselho #emb_uf6s2l card .action { color:#c57fc1 !important ; }
 body.conselho #first:checked ~ label.first{  border-color:#c57fc1;} 
 body.conselho #third:checked ~ label.third { border: 6px solid #c57fc1; }

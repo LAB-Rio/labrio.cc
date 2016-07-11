@@ -23,6 +23,9 @@ get '/desafioagora' do
  send_file 'public/desafioagora.html'
 end
 
+get '/agora' do
+ send_file 'public/desafioagora.html'
+end
 
 get '/conselhodajuventude' do
  send_file 'public/conselho.html'
