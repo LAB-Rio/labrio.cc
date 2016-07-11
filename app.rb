@@ -25,7 +25,11 @@ end
 
 
 get '/conselhodajuventude' do
- send_file 'public/conselhodajuventude.html'
+ send_file 'public/conselho.html'
+end
+
+get '/conselho' do
+ send_file 'public/conselho.html'
 end
 
 get '/mapeando' do
