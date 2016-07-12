@@ -347,18 +347,11 @@ body.desafioagora a, body.desafioagora a:active, body.desafioagora a:focus,
 body.mapeando a, body.mapeando a:active, body.mapeando a:focus {
     color:#000;
 }
-body.desafioagora h1,
-body.desafioagora h2,
-body.desafioagora h3,
-body.desafioagora h4,
-body.desafioagora h5,
-body.desafioagora h6,
-body.imersao h1, 
-body.imersao h2, 
-body.imersao h3,
-body.imersao h4,
-body.imersao h5,
-body.imersao h6 {
+body.imersao h1,body.imersao h2, body.imersao h3,
+body.chegajunto h1,body.chegajunto h2, body.chegajunto h3,
+body.mapeando h1,body.mapeando h2, body.mapeando h3,
+body.desafioagora h1,body.desafioagora h2, body.desafioagora h3,
+body.mapeando,body.chegajunto,body.desafioagora{
     font-family: 'DIN Alternate';
 }
 
@@ -367,7 +360,7 @@ body.imersao h6 {
      height: 600px;
 }
 .header-paralax.desafioagora{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/desafioagora/agora-first-image.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/desafioagora/second-agora-background-clariza-reriew-two.jpg');
     height: 600px;
 }
 .header-paralax.chegajunto{
@@ -756,6 +749,12 @@ body.conselho #first:checked ~ label.first{  border-color:#c57fc1;}
 body.conselho #third:checked ~ label.third { border: 6px solid #c57fc1; }
 body.conselho #second:checked ~ label.second { border: 6px solid #c57fc1; }
 body.conselho .testimonials .quotes {color:#c57fc1;}
+
+body.mapeando #emb_uf6s2l card .action { color:#ed2654 !important ; }
+body.mapeando #first:checked ~ label.first{  border-color:#ed2654;} 
+body.mapeando #third:checked ~ label.third { border: 6px solid #ed2654; }
+body.mapeando #second:checked ~ label.second { border: 6px solid#ed2654; }
+body.mapeando .testimonials .quotes {color:#ed2654;}
 
 #first:checked ~ label.first {
   border-width:6px;
