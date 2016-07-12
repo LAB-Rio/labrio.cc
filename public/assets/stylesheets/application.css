@@ -1,3 +1,6 @@
+* { box-sizing:border-box }
+*:before, *:after { box-sizing:inherit }
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body { background: #f3f3f3; font-family: 'Helvetica Neue', 'Arial', sans-serif; -webkit-font-smoothing: antialiased }
@@ -280,8 +283,10 @@ body.imersao #top, body.mapeando #top, body.conselho #top, body.chegajunto #top,
 body.desafioagora section#top img,
 body.imersao section#top img {
     opacity: 1;
-}
-
+} 
+.mapeando-bg {background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/mapeando/mapeando_background2.jpg') no-repeat center center fixed;}
+.chegajunto-bg {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/chegajunto/chegajunto_background2.jpg') no-repeat center center fixed;}
+.desafioagora-bg {background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/desafioagora/agora_background3.jpg') no-repeat center center fixed;}
 .conselhobg { background: url('../images/conselho/conselho-between-image.jpg') no-repeat center center fixed;}
 .big-picture{
     max-width: 100%;
@@ -362,13 +367,21 @@ body.imersao h6 {
      height: 600px;
 }
 .header-paralax.desafioagora{
-    background-image:url('../images/desafioagora/agora-first-image.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/desafioagora/agora-first-image.jpg');
     height: 600px;
 }
 .header-paralax.chegajunto{
-    background-image:url('../images/chegajunto/chegajunto-background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/chegajunto/chegajunto-background.jpg');
+    height: 600px;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+}
+.header-paralax.mapeando-header{
+    background-image:url('../images/mapeando/mapeando-first-image.jpg');
     height: 600px;
 }
+
 
 .header-paralax {
     background-image: url('../images/background-imersao.png');
@@ -785,9 +798,16 @@ section.section-media {
 
 
 /* Small screens - MOBILE */
-@media only screen { } /* Define mobile styles - Mobile First */
+@media only screen {
+    
+    
+} /* Define mobile styles - Mobile First */
  
 @media only screen and (max-width: 40em) {
+    
+    a.logo-lab img {
+        margin-top: -10px;
+    }
     
     .container.testimonials, .testimonials blockquote{
         /*max-width: 600px;*/
@@ -861,4 +881,4 @@ section.section-media {
 #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
 #mc_embed_signup .button { background: #333333; color: #fff;}
 
-    
+

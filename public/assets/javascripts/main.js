@@ -1,4 +1,5 @@
 console.log("LAB.RIO");
+
 function scrollBanner() {
   var scrollPos;
   var headerText = document.querySelector('.header-paralax h1');
@@ -113,4 +114,10 @@ if ($("body").hasClass("desafioagora")) {
     });
     
       
+}
+
+if (Modernizr.touch) { 
+    alert('Touch Screen');
+} else { 
+    alert('No Touch Screen');
 }
