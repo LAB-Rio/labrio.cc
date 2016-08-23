@@ -4,7 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body.pagina-principal { background: #f3f3f3; font-family: 'Helvetica Neue', 'Arial', sans-serif; -webkit-font-smoothing: antialiased }
-body { background: #f3f3f3; font-family: 'DIN Alternate', 'Helvetica Neue', 'Arial', sans-serif; -webkit-font-smoothing: antialiased }
+body { background: #f3f3f3; font-family: 'Helvetica Neue', 'Arial', sans-serif; -webkit-font-smoothing: antialiased }
 .project-internal .row:first-child { padding-top: 8em }
 .project-internal h4 { padding-top: 1.6em; color: white; font-weight: 500 }
 
