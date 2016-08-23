@@ -38,3 +38,11 @@ end
 get '/mapeando' do
  send_file 'public/mapeando-new.html'
 end
+
+get '/about' do 
+  send_file 'pbulic/sobre-nos.html'
+end
+
+get '/saibamais' do 
+  send_file 'pbulic/sobre-nos.html'
+end
