@@ -113,7 +113,7 @@ section#team .medium-3:hover .info, section#team .medium-4:hover .info { visibil
 
 section#partners { padding: 1.4em auto; padding-bottom: 5em }
 section#partners img { -webkit-filter: grayscale(.8); }
-section#talk { padding-top: 2em }
+section#talk { padding-top: 2em ; padding-bottom: 2em;}
 section#talk h2 { margin-bottom: 3em }
 section#talk p { font-size: 100%; }
 
@@ -320,12 +320,26 @@ body.imersao section#top img {
     max-width: 100%;
     width: auto;
     height: auto;
-    background: url('../images/background-imersao-two.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     
+}
+
+.pag__inicial.big-picture{
+    background: url('../images/background-saibamais.jpg') no-repeat center center fixed;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.pag__inicial {
+    text-align: center;
 }
 
 .Aligner {
@@ -337,10 +351,26 @@ body.imersao section#top img {
 .Aligner-item {
     max-width: 50%;
 }
+.Aligner-item.inicial{
+    max-width: 70%;
+}
+
+.button.white{
+    color: #fff;
+    font-size: 13px;
+}
+
+
 .conteudo-box {
    margin-top: 120px;
    margin-bottom: 120px;
 }
+
+section#participacao {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
 body.mapeando img.escala-de-participacao,
 body.chegajunto img.escala-de-participacao,
 body.imersao img.escala-de-participacao,
