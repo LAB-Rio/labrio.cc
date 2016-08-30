@@ -277,6 +277,22 @@ body.conselho, body.desafioagora {
     background-color: #fff;
 }
 
+body.imersao nav a, body.mapeando nav a, 
+body.conselho nav a, body.desafioagora nav a{
+    color: #f9f9f9;
+    opacity: .6;
+    display: inline-block;
+    text-shadow: 0 1px 1px #333;
+    text-transform: uppercase;
+    margin: 1.4em .6em;
+    transition: all .2s;
+    font-weight: 400;
+    font-family: 'Work Sans';
+    font-size: .7em;
+    letter-spacing: 1px;
+}
+
+
 body.imersao #top, body.mapeando #top, body.conselho #top, body.chegajunto #top, body.desfioagora #top{
     background: #000;
 }
