@@ -371,6 +371,11 @@ section#participacao {
     padding-top: 40px;
 }
 
+.escala-button {
+    margin-right: 22px;
+    margin-left: 22px;
+}
+
 body.mapeando img.escala-de-participacao,
 body.chegajunto img.escala-de-participacao,
 body.imersao img.escala-de-participacao,
