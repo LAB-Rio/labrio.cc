@@ -254,12 +254,15 @@ figure {
 }
 
 /**Footer **/
+body.sobrenos .content {
+    margin-bottom: 60px;
+}
 
 .footer-title {
     position: relative;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 1.3125em;
+    font-size: 1.2125em;
     line-height: 1.04762em;
     color: #000;
     margin-bottom: 14px;
