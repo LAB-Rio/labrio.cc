@@ -40,9 +40,9 @@ get '/mapeando' do
 end
 
 get '/about' do 
-  send_file 'public/sobre-nos.html'
+ send_file 'public/sobre-nos.html'
 end
 
 get '/saibamais' do 
-  send_file 'public/sobre-nos.html'
+ send_file 'public/sobre-nos.html'
 end
