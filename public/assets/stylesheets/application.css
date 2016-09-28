@@ -315,6 +315,33 @@ body.imersao section#top img {
     background-size: cover;
     
 }
+body.sobrenos{
+    background-color: #fff;
+}
+.about-four.big-picture{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/last-banner-we.jpg') no-repeat center center fixed;
+}
+.about-three.big-picture{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/three-banner-about.jpg') no-repeat center center fixed;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.about.big-picture{
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/second-banner_aboutwe.jpg') no-repeat center center fixed;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .imersao.big-picture{
     background: url('../images/background-imersao-two.jpg') no-repeat center center fixed;
     max-width: 100%;
@@ -342,10 +369,31 @@ body.imersao section#top img {
     text-align: center;
 }
 
+
+.left {
+   -webkit-align-self: flex-start;
+   align-self: flex-start;
+       margin-right: 28%;
+}
+
+.right {
+    margin-left: 17%;
+}
+
+p.titulo-participacao__conteudo {
+    margin: 0 5px;
+}
+
+.space-up-down{
+    padding: 60px 0 60px;
+}
 .Aligner {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.left-flexend{
+    justify-content: flex-end;
 }
 
 .Aligner-item {
@@ -393,7 +441,21 @@ img.escala-de-participacao {
     font-weight: 600;
     color: #fff;
 }
-
+.conteudo-box__text.right{
+    text-align: right;
+}
+.conteudo-box__text.left{
+    text-align: left;
+}
+.about-text.conteudo-box__text{
+    text-transform: uppercase;
+    
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+}
 body.imersao a, body.imersao a:active, body.imersaso a:focus,
 body.desafioagora a, body.desafioagora a:active, body.desafioagora a:focus,
 body.mapeando a, body.mapeando a:active, body.mapeando a:focus {
@@ -406,7 +468,10 @@ body.desafioagora h1,body.desafioagora h2, body.desafioagora h3,
 body.mapeando,body.chegajunto,body.desafioagora{
     font-family: 'DIN Alternate';
 }
-
+.header-paralax.sobre-nos{
+    background-image: url('../images/banner-principal-sobrenois.jpg');
+     height: 485px;
+}
 .header-paralax.conselho{
      background-image: url('../images/conselho/conselhodajuventude-background.jpg');
      height: 485px;
@@ -934,3 +999,139 @@ section.section-media {
 #mc_embed_signup .button { background: #333333; color: #fff;}
 
 
+/** Saiba Mais **/
+.box-title{
+  text-transform: uppercase;
+  font-family: "Helvetica";
+  font-weight: 600;
+}
+.box-title .subtitulo {
+    text-decoration: underline;
+    -moz-text-decoration-color: #FBCD0A; /* Code for Firefox */
+    text-decoration-color: #FBCD0A;
+}
+.big-text{
+    font-family: "Helvetica";
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.big-text.yellow{
+    color: #ffcc00;
+    text-align: right;
+    font-size: 30px;
+}
+.box-image{
+    background-color: #FBCD0A;
+    padding: 0 5px;
+}
+.box-image.white{
+    background-color: #fff
+}
+.yellow-box{
+    background-color: #FBCD0A;
+}
+.buttons-box-sobrenos .button{
+    padding-left: 5.9rem;
+    text-align: center
+}
+.box-image p {
+    font-family: "Helvetica";
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.rounded-list{
+    
+}
+
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+.rounded-list li {
+    padding: 5px 0;
+}
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: rgba(221, 221, 221, 0.2);
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+.rounded-list a:hover{
+    background: #eee;
+}
+
+.rounded-list a:hover:before{
+    transform: rotate(360deg);  
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #FBCD0A;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.nivpart h3 {
+    text-transform: uppercase;
+    font-family: "helvetica";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo-participacao{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.demandas .button {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+.demandas .button:hover {
+    color: #000;
+    background-color: #ffcc00;
+}
+/*Effects*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera
