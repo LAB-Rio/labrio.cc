@@ -252,7 +252,11 @@ body.saiba-mais { background: white }
 figure {
     margin: 0;
 }
-
+footer a:hover {
+    color: #000;
+    font-weight: 600;
+    
+}
 /**Footer **/
 body.sobrenos .content {
     margin-bottom: 60px;
