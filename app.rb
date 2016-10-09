@@ -46,3 +46,7 @@ end
 get '/saibamais' do 
  send_file 'public/sobre-nos.html'
 end
+
+get '/relatorio' do
+ send_file 'public/relatorio.html'
+end
