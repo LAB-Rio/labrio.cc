@@ -24,7 +24,7 @@ if ($("body").hasClass("mapeando")) {
       			    $("<div>")
                 .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
                  .appendTo(".mapeandorio").wrap("<a href='" + item.link + "'></a>");
-      			    }    
+      			    }
       		});
     });
 }
@@ -39,12 +39,12 @@ if ($("body").hasClass("chegajunto")) {
       			    $("<div>")
                 .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
                  .appendTo(".chegajunto-pictures").wrap("<a href='" + item.link + "'></a>");
-      			    }    
+      			    }
       		});
       });
 }
 if ($("body").hasClass("imersao")) {
-    
+
     //FlickrAPi
 
   $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=imersao2016&format=json&jsoncallback=?", function(data){
@@ -52,16 +52,16 @@ if ($("body").hasClass("imersao")) {
   			 var image = (item.media.m).replace("_m.jpg", "_d.jpg");
              var title = item.title;
              var blank = "_blank";
-             
+
          if(i<21){
   			    $("<div>")
             .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
              .appendTo(".imersao2016").wrap("<a target='" + blank + "' href='" + item.link + "'></a>");
-  			    }    
+  			    }
   		});
   });
-  
-  
+
+
   $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=imersao2015&format=json&jsoncallback=?", function(data){
   		$.each(data.items, function(i,item){
   			 var image = (item.media.m).replace("_m.jpg", "_d.jpg");
@@ -71,10 +71,23 @@ if ($("body").hasClass("imersao")) {
   			    $("<div>")
             .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
              .appendTo(".imersao2015").wrap("<a target='" +blank+ "'href='" + item.link + "'></a>");
-  			    }    
+  			    }
   		});
   });
-    
+
+  $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=129889428@N02&tags=imersao3edicao&format=json&jsoncallback=?", function(data){
+  		$.each(data.items, function(i,item){
+  			 var image = (item.media.m).replace("_m.jpg", "_d.jpg");
+         var title = item.title;
+         var blank = "_blank";
+         if(i<21){
+  			    $("<div>")
+            .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
+             .appendTo(".imersao3edicao").wrap("<a target='" +blank+ "'href='" + item.link + "'></a>");
+  			    }
+  		});
+  });
+
 }
 
 if ($("body").hasClass("conselho")) {
@@ -88,14 +101,14 @@ if ($("body").hasClass("conselho")) {
       			    $("<div>")
                 .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
                  .appendTo(".conselho-pics").wrap("<a target='" +blank+ "'href='" + item.link + "'></a>");
-      			    }    
+      			    }
       		});
     });
-    
+
     $.getJSON("https://sheetsu.com/apis/v1.0/2e05de4e", function(data){
         console.log(data);
     });
-      
+
 }
 
 if ($("body").hasClass("desafioagora")) {
@@ -109,15 +122,15 @@ if ($("body").hasClass("desafioagora")) {
       			    $("<div>")
                 .attr({"style":"background-image: url("+image+")","class":"flickr-image", "data-title":title})
                  .appendTo(".desafio-pictures").wrap("<a target='" +blank+ "'href='" + item.link + "'></a>");
-      			    }    
+      			    }
       		});
     });
-    
-      
+
+
 }
 
-if (Modernizr.touch) { 
+if (Modernizr.touch) {
     alert('Touch Screen');
-} else { 
+} else {
     alert('No Touch Screen');
 }
