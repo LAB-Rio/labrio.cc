@@ -2238,10 +2238,6 @@
 				width: 100%;
 			}
 
-      .image.main.hackthona {
-        height: 40px;
-      }
-
 			@media screen and (max-width: 736px) {
 
 				.image.main {
@@ -2856,11 +2852,11 @@
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #000;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+				background-color:#b4fe00;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
