@@ -3,7 +3,7 @@ require 'sinatra'
 enable :static
 
 get '/' do
-  send_file 'public/index.html' 
+  send_file 'public/index.html'
 end
 
 
@@ -39,10 +39,18 @@ get '/mapeando' do
  send_file 'public/mapeando-new.html'
 end
 
-get '/about' do 
+get '/about' do
  send_file 'public/sobre-nos.html'
 end
 
-get '/saibamais' do 
+get '/saibamais' do
  send_file 'public/sobre-nos.html'
+end
+
+get '/desconferenciahacker' do
+ send_file 'public/evento/index.html'
+end
+
+get '/hackthona' do
+ send_file 'public/evento/hackthona.html'
 end
